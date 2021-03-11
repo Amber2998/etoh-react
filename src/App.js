@@ -1,6 +1,7 @@
 import './App.css';
 import {
 	BrowserRouter as Router,
+	// HashRouter as Router,
 	Switch,
 	Route
 } from "react-router-dom";
@@ -15,7 +16,7 @@ import Footer from './components/Footer/Footer';
 
 function App () {
 	return (
-		<Router>
+		<Router basename={process.env.PUBLIC_URL}>
 			<div style={{
 				backgroundImage: `url(Images/Img_back.png)`,
 				backgroundRepeat: 'no-repeat',
