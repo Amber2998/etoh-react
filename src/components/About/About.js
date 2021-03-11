@@ -1,7 +1,6 @@
 import React from 'react';
 
-
-export default () => {
+const About = () => {
 	return (
 		<div>
 			<h1>Team EtOH</h1>
@@ -40,3 +39,5 @@ export default () => {
 		</div>
 	);
 }
+
+export default About;

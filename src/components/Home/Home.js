@@ -1,16 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default () => {
+const Home = () => {
 	return <div>
-		{/*<main style="background-color: white">*/}
 			<div className="box">
 				<div className="fadingbox">
-					<img src="Images/banner4.jpg"/>
-					{/*<div className="btn" onClick="document.location='bestelformulier.html'">Bestel hier!</div>*/}
+					<img src="Images/banner4.jpg" alt={'banner'}/>
 					<Link to={"/orders"}>
 						<div className="btn" >Bestel hier!</div>
-
 					</Link>
 				</div>
 			</div>
@@ -59,9 +56,9 @@ export default () => {
 				</div>
 				<div className="d-flex justify-content-center">
 					<a href="products.html">
-						<img src="Images/Madam%20Cherry.png" height="200em"/>
-						<img src="Images/Rabarber.png" height="200em"/>
-						<img src="Images/Gingercomingsoon.png" height="200em"/>
+						<img src="Images/Madam%20Cherry.png" height="200em" alt={'madam-cherry'}/>
+						<img src="Images/Rabarber.png" height="200em" alt={'rabarber'}/>
+						<img src="Images/Gingercomingsoon.png" height="200em" alt={'ginger-coming-soon'}/>
 					</a>
 				</div>
 			</div>
@@ -71,11 +68,12 @@ export default () => {
 						<h3>Onze partners</h3>
 					</div>
 					<div className="d-flex justify-content-between">
-						<img src="Images/dame-jeanne.png" height="100px"/>
-						<img src="Images/pipo.png" height="100px"/>
-						<img src="Images/vlajo.jpg" height="100px"/>
+						<img src="Images/dame-jeanne.png" height="100px" alt={'dame-jeanne'}/>
+						<img src="Images/pipo.png" height="100px" alt={'pipo'}/>
+						<img src="Images/vlajo.jpg" height="100px" alt={'vlajo'}/>
 					</div>
 			</div>
-		{/*</main*/}
 	</div>
 }
+
+export default Home;

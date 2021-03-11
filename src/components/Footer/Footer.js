@@ -1,17 +1,17 @@
 import React from 'react';
 
-export default () => {
+const Footer = () => {
 	return (
 		<footer >
 				<div className="d-flex justify-content-center">
 					<a href="https://www.facebook.com/EtOHBeverages">
-						<img src="Images/facebook.png" height="50px"/>
+						<img src="Images/facebook.png" height="50px" alt={'facebook'}/>
 					</a>
 					<a href="https://wa.me/32478239016">
-						<img src="Images/whatsapp.png" height="50px"/>
+						<img src="Images/whatsapp.png" height="50px" alt={'whatsapp'}/>
 					</a>
 					<a href="mailto: etohbeverages@gmail.com">
-						<img src="Images/email.png" height="50px"/>
+						<img src="Images/email.png" height="50px" alt={'email'}/>
 					</a>
 				</div>
 				<div className="d-flex justify-content-center ">
@@ -20,3 +20,5 @@ export default () => {
 		</footer>
 	)
 }
+
+export default Footer;

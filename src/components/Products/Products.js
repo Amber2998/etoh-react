@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default () => {
+const Products = () => {
 	return (
 		<div>
 			<h1> Ontdek hier onze producten</h1>
@@ -135,3 +135,5 @@ export default () => {
 
 	)
 }
+
+export default Products;

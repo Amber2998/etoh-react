@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default () => {
+const Contact = () => {
 	return (
 		<div>
 
@@ -33,3 +33,5 @@ export default () => {
 		</div>
 	)
 }
+
+export default Contact;
