@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import {
 	BrowserRouter as Router,
 	Switch,
-	Route,
+	Route
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
@@ -17,39 +16,43 @@ import Footer from './components/Footer/Footer';
 function App () {
 	return (
 		<Router>
-			<div className={"container"} style={{
-				backgroundImage: 'url(Images/Image_back.png)',
+			<div style={{
+				backgroundImage: `url(Images/Img_back.png)`,
 				backgroundRepeat: 'no-repeat',
 				backgroundAttachment: 'scroll',
 				backgroundSize: '62%',
-				height:'100%',
-				display: 'flex',
-				flexDirection: 'column'
+				height: '100%',
 			}}>
+				<div className={"container"} style={{
+					backgroundSize: '62%',
+					height: '100%',
+					display: 'flex',
+					flexDirection: 'column'
+				}}>
 					<Navbar/>
 
-				<div className={"content"}>
-					<Switch>
-						<Route path="/about">
-							<About/>
-						</Route>
-						<Route path="/products">
-							<Products/>
-						</Route>
-						<Route path="/orders">
-							<Orders/>
-						</Route>
-						<Route path="/contact">
-							<Contact/>
-						</Route>
-						<Route path="/">
-							<Home/>
-						</Route>
-					</Switch>
+					<div className={"content"}>
+						<Switch>
+							<Route path="/about">
+								<About/>
+							</Route>
+							<Route path="/products">
+								<Products/>
+							</Route>
+							<Route path="/orders">
+								<Orders/>
+							</Route>
+							<Route path="/contact">
+								<Contact/>
+							</Route>
+							<Route path="/">
+								<Home/>
+							</Route>
+						</Switch>
+					</div>
+					<Footer/>
 				</div>
-				<Footer/>
 			</div>
-
 		</Router>
 	);
 }
