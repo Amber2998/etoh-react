@@ -2,16 +2,18 @@
   "name": "etoh-react",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://subdomain.etoh-beverages.be",
+  "homepage": "https://subdomain.etoh-beverages.be",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.6.0",
     "gh-pages": "^3.1.0",
+    "i18next": "^19.9.2",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.1",
     "react-dom": "^17.0.1",
+    "react-i18next": "^9.0.10",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
@@ -22,8 +24,8 @@
     "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-	"predeploy":"npm run build",
-	"deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
