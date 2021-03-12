@@ -2,7 +2,7 @@
   "name": "etoh-react",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://nickkumpen.github.io/etoh-react",
+  "homepage":"https://subdomain.etoh-beverages.be",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
