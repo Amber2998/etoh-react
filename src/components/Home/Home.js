@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { withNamespaces } from 'react-i18next';
 
-const Home = () => {
+const Home = ({ t }) => {
 	return <div>
 			<div className="box">
 				<div className="fadingbox">
 					<img src="Images/banner4.jpg" alt={'banner'}/>
 					<Link to={"/orders"}>
-						<div className="btn" >Bestel hier!</div>
+						<div className="btn" >{t('Bestel hier!')}</div>
 					</Link>
 				</div>
 			</div>
@@ -76,4 +77,4 @@ const Home = () => {
 	</div>
 }
 
-export default Home;
+export default withNamespaces() (Home);
