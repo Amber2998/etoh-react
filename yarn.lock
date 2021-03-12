@@ -5922,6 +5922,13 @@
     "normalize-url" "^1.0.0"
     "strip-url-auth" "^1.0.0"
 
+"i18next-browser-languagedetector@^6.0.1":
+  "integrity" "sha512-3H+OsNQn3FciomUU0d4zPFHsvJv4X66lBelXk9hnIDYDsveIgT7dWZ3/VvcSlpKk9lvCK770blRZ/CwHMXZqWw=="
+  "resolved" "https://repo.crosscomm.eu/repository/npm-public/i18next-browser-languagedetector/-/i18next-browser-languagedetector-6.0.1.tgz"
+  "version" "6.0.1"
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+
 "i18next@^19.9.2", "i18next@>= 14.0.1":
   "integrity" "sha512-0i6cuo6ER6usEOtKajUUDj92zlG+KArFia0857xxiEHAQcUwh/RtOQocui1LPJwunSYT574Pk64aNva1kwtxZg=="
   "resolved" "https://repo.crosscomm.eu/repository/npm-public/i18next/-/i18next-19.9.2.tgz"
