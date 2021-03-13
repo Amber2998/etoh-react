@@ -127,4 +127,4 @@ const Products = ({t}) => {
 	)
 }
 
-export default withNamespaces() (Products);
+export default withNamespaces('products') (Products);

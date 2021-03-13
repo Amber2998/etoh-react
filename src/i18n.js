@@ -2,16 +2,42 @@ import i18n from "i18next";
 import detector from "i18next-browser-languagedetector";
 import { reactI18nextModule } from "react-i18next";
 
-import translationNL from './locales/nl/translation.json';
-import translationEN from './locales/en/translation.json';
+import homeNL from './locales/nl/home.json';
+import aboutNL from './locales/nl/about.json';
+import productsNL from './locales/nl/products.json';
+import ordersNL from './locales/nl/orders.json';
+import contactNL from './locales/nl/contact.json';
+import footerNL from './locales/nl/footer.json';
+import navbarNL from './locales/nl/navbar.json';
+
+import homeEN from './locales/en/home.json';
+import aboutEN from './locales/en/about.json';
+import productsEN from './locales/en/products.json';
+import ordersEN from './locales/en/orders.json';
+import contactEN from './locales/en/contact.json';
+import footerEN from './locales/en/footer.json';
+import navbarEN from './locales/en/navbar.json';
 
 // the translations
 const resources = {
 	nl: {
-		translation: translationNL
+		home: homeNL,
+		about: aboutNL,
+		products: productsNL,
+		orders: ordersNL,
+		contact: contactNL,
+		footer: footerNL,
+		navbar: navbarNL
+
 	},
 	en: {
-		translation: translationEN
+		home: homeEN,
+		about: aboutEN,
+		products: productsEN,
+		orders: ordersEN,
+		contact: contactEN,
+		footer: footerEN,
+		navbar: navbarEN
 	}
 };
 

@@ -79,4 +79,4 @@ const Home = ({ t }) => {
 	</div>
 }
 
-export default withNamespaces() (Home);
+export default withNamespaces('home') (Home);
