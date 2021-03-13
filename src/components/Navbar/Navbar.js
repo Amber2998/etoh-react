@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { withRouter, NavLink } from 'react-router-dom';
+import { withNamespaces } from 'react-i18next';
 
 
 const CustomNavLink = ({to, label, ...props}) => {
@@ -17,7 +18,7 @@ const CustomNavLink = ({to, label, ...props}) => {
 
 class CustomNavBar extends React.Component {
 	render () {
-		let {location} = this.props;
+		let {location, t} = this.props;
 
 		return <Navbar expand="lg" sticky="top" style={{backgroundColor: 'white', boxShadow: '0px 3px 5px 0px #ececec', margin: '0 0 1em 0'}} >
 			<Navbar.Brand href={"/"}>
@@ -26,15 +27,17 @@ class CustomNavBar extends React.Component {
 			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 			<Navbar.Collapse id="responsive-navbar-nav">
 				<Nav activeKey={location.pathname} style={{display:'flex', justifyContent:'space-evenly', flexGrow:1}}>
-					<CustomNavLink to={"/"} label={'Home'} exact/>
-					<CustomNavLink to={"/about"} label={'About'}/>
-					<CustomNavLink to={"/products"} label={'Products'}/>
-					<CustomNavLink to={"/orders"} label={'Orders'}/>
-					<CustomNavLink to={"/contact"} label={'Contact'}/>
+					<CustomNavLink to={"/"} label={t('Home')} exact/>
+					<CustomNavLink to={"/about"} label={t('About')}/>
+					<CustomNavLink to={"/products"} label={t('Products')}/>
+					<CustomNavLink to={"/orders"} label={t('Orders')}/>
+					<CustomNavLink to={"/contact"} label={t('Contact')}/>
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>
 	}
 }
 
-export default withRouter(CustomNavBar);
+const RouterNavBar = withRouter(CustomNavBar);
+
+export default withNamespaces('navbar') (RouterNavBar);

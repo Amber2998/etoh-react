@@ -1,8 +1,10 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 
 
 class Contact extends React.Component {
 	render () {
+		let {t} = this.props;
 		return (
 			<div>
 				<h1> Contacteer ons!</h1>
@@ -32,4 +34,4 @@ class Contact extends React.Component {
 	}
 }
 
-export default Contact;
+export default withNamespaces('contact') (Contact);

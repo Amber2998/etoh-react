@@ -1,6 +1,7 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 
-const About = () => {
+const About = ({t, ...props}) => {
 	return (
 		<div>
 			<h1>Team EtOH</h1>
@@ -39,4 +40,4 @@ const About = () => {
 	);
 }
 
-export default About;
+export default withNamespaces ('about') (About);

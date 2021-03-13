@@ -1,8 +1,9 @@
 import React from 'react';
 import i18n from '../../i18n.js';
 import { Button, ButtonGroup } from 'react-bootstrap';
+import { withNamespaces } from 'react-i18next';
 
-const Footer = () => {
+const Footer = ({t, ...props}) => {
 
 	return (
 		<footer >
@@ -30,4 +31,4 @@ const Footer = () => {
 	)
 }
 
-export default Footer;
+export default withNamespaces ('footer') (Footer);

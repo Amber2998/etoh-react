@@ -1,7 +1,8 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 
 
-const Orders = () => {
+const Orders = ({t, ...props}) => {
 	return (
 		<div >
 			<div>
@@ -24,4 +25,4 @@ const Orders = () => {
 	)
 }
 
-export default Orders;
+export default withNamespaces ('orders') (Orders);
