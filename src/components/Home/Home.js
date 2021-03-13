@@ -21,7 +21,7 @@ const Home = ({ t }) => {
 					<div className="col-md-8">
 						<div className="card-body">
 							<div className="card-title d-flex flex-row-reverse">
-								<span style={{color: '#E6007E', fontWeight: 'bolder'}}>EtOH, belgian flavors in a bottle</span>
+								<span style={{color: '#E6007E', fontWeight: 'bolder', fontSize: '32px'}}>EtOH, belgian flavors in a bottle</span>
 							</div>
 							<div className="card-text ">
 								<p>Wij, bij EtOH, hechten belang aan lokale teelt. Wij maken gebruik van pure ingrediënten uit ons prachtige Hageland en verwerken deze in onze heerlijke drankjes. </p>
@@ -38,7 +38,7 @@ const Home = ({ t }) => {
 					<div className="col-md-8">
 						<div className="card-body">
 							<div className="card-title">
-								<span style={{color: '#E6007E', fontWeight: 'bolder'}}> Onze Missie: Lokale passie </span>
+								<span style={{color: '#E6007E', fontWeight: 'bolder', fontSize: '32px'}}> Onze Missie: Lokale passie </span>
 							</div>
 							<div className="card-text ">
 								<p> Met onze drankjes willen we onze passie voor lokaal delen met heel Vlaanderen. We willen de aandacht vestigen op lokale, pure teelt. Met dit project willen wij bewijzen dat ook Belgi&euml; heel wat lekkere alcoholische dranken te bieden heeft.</p>
@@ -59,7 +59,8 @@ const Home = ({ t }) => {
 					<a href="products.html">
 						<img src="Images/Madam%20Cherry.png" height="200em" alt={'madam-cherry'}/>
 						<img src="Images/Rabarber.png" height="200em" alt={'rabarber'}/>
-						<img src="Images/Gingercomingsoon.png" height="200em" alt={'ginger-coming-soon'}/>
+						<img src="Images/MissGinger.png" height="200em" alt={'miss-ginger'}/>
+						<img src="Images/duchessfran.png" height="200em" alt={'duchess-fran'}/>
 					</a>
 				</div>
 			</div>
@@ -69,8 +70,9 @@ const Home = ({ t }) => {
 						<h3>Onze partners</h3>
 					</div>
 					<div className="d-flex justify-content-between">
-						<img src="Images/dame-jeanne.png" height="100px" alt={'dame-jeanne'}/>
+						<img src="Images/bsc.jpeg" height="100px" alt={'bsc'}/>
 						<img src="Images/pipo.png" height="100px" alt={'pipo'}/>
+						<img src="Images/fruitvanhellemont.jpeg" height="100px" alt={'fruit-vanhellemont'}/>
 						<img src="Images/vlajo.jpg" height="100px" alt={'vlajo'}/>
 					</div>
 			</div>

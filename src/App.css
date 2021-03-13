@@ -38,45 +38,45 @@
 }
 
 h1 {
-    font-family: "Arial", Arial, bold;
+    font-family: "Source Sans Pro", Source Sans Pro;
     font-size: 42px;
     color: #E6007E;
 }
 
 h2 {
-    font-family: "Arial", Arial;
+    font-family: "Source Sans Pro", Source Sans Pro;
     font-size: 24px;
     color: #008D36;
 }
 
 h3 {
-    font-family: "Arial", Arial, bold;
+    font-family: "Source Sans Pro", Source Sans Pro;
     font-size: 24px;
     color: #E6007E;
 }
 
 h4 {
-    font-family: "Arial", Arial, bold;
+    font-family: "Source Sans Pro", Source Sans Pro bold;
     font-size: 18px;
     color: gray;
 }
 
 p {
-    font-family: "Roboto", Roboto, sans-serif;
-    font-size: 18px;
+    font-family: "Source Sans Pro", Source Sans Pro sans-serif;
+    font-size: 16px;
     color: black;
     text-align: justify
 }
 
 ul {
-    font-family: "Roboto", Roboto, sans-serif;
+    font-family: "Source Sans Pro", Source Sans Pro sans-serif;
     font-size: 18px;
     color: black;
     list-style-type: square;
 }
 
 table {
-    font-family: "Roboto", Roboto, sans-serif;
+    font-family: "Source Sans Pro", Source Sans Pro sans-serif;
     font-size: 18px;
     color: black;
 }
@@ -94,7 +94,7 @@ table {
 }
 
 .row {
-    font-family: "Source Sans Pro", Roboto, sans-serif;
+    font-family: "Source Sans Pro", Source Sans Pro;
     font-size: 18px;
     background-color: none;
 }

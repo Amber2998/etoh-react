@@ -33,7 +33,6 @@ const About = () => {
 					<h2 style={{textAlign: "center"}}>Elvira </h2>
 					<p style={{textAlign: "center"}}> Storyteller</p>
 				</div>
-				<div className="col-1"></div>
 			</div>
 
 		</div>
