@@ -1,6 +1,9 @@
 import React from 'react';
+import i18n from '../../i18n.js';
+import { Button, ButtonGroup } from 'react-bootstrap';
 
 const Footer = () => {
+
 	return (
 		<footer >
 				<div className="d-flex justify-content-center">
@@ -17,6 +20,12 @@ const Footer = () => {
 				<div className="d-flex justify-content-center ">
 					<p style={{color: "white"}}> Copyright &copy; 2021 | EtOH </p>
 				</div>
+			<div>
+				<ButtonGroup>
+					<Button onClick={() => i18n.changeLanguage('nl')}>Nederlands</Button>
+					<Button onClick={() => i18n.changeLanguage('en')}>Engels</Button>
+				</ButtonGroup>
+			</div>
 		</footer>
 	)
 }

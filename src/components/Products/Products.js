@@ -1,10 +1,11 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 
 
-const Products = () => {
+const Products = ({t}) => {
 	return (
 		<div>
-			<h1> Ontdek hier onze producten</h1>
+			<h1>{t('Ontdek hier onze producten')}</h1>
 
 			<div className="card" style={{margin: "1em 0"}}>
 				<div className="row">
@@ -136,4 +137,4 @@ const Products = () => {
 	)
 }
 
-export default Products;
+export default withNamespaces() (Products);
