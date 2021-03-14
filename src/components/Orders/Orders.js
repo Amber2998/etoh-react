@@ -6,13 +6,13 @@ const Orders = ({t, ...props}) => {
 	return (
 		<div >
 			<div>
-				<h1> Via dit formulier kan je je bestelling plaatsen.</h1>
-				<h2> Hoe werkt het?</h2>
+				<h1>{t('Via dit formulier kan je je bestelling plaatsen.')}</h1>
+				<h2>{t('Hoe werkt het?')}</h2>
 				<ol>
-					<li> Vul onderstaand formulier in.</li>
-					<li> Je ontvangt van ons een e-mail met de betaalgegevens.</li>
-					<li> Maak de betaling in orde.</li>
-					<li> Wij sturen je een mail om de betaling de bevestigen en de details voor de verzending of ophaling van jouw bestelling.</li>
+					<li>{t('Vul onderstaand formulier in.')}</li>
+					<li>{t('Je ontvangt van ons een e-mail met de betaalgegevens.')}</li>
+					<li>{t('Maak de betaling in orde.')}</li>
+					<li>{t('Wij sturen je een mail om de betaling de bevestigen en de details voor de verzending of ophaling van jouw bestelling.')}</li>
 				</ol>
 			</div>
 			<div >

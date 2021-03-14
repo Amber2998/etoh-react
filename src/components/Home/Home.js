@@ -56,13 +56,12 @@ const Home = ({ t }) => {
 					<h3>{t('Onze producten')}</h3>
 				</div>
 				<div className="d-flex justify-content-center">
-					{/*TODO: add a Link io href here */}
-					<a href="products.html">
+					<Link to={'/products'}>
 						<img src="Images/Madam%20Cherry.png" height="200em" alt={'madam-cherry'}/>
 						<img src="Images/Rabarber.png" height="200em" alt={'rabarber'}/>
 						<img src="Images/MissGinger.png" height="200em" alt={'miss-ginger'}/>
 						<img src="Images/duchessfran.png" height="200em" alt={'duchess-fran'}/>
-					</a>
+					</Link>
 				</div>
 			</div>
 			<div>

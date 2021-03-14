@@ -7,7 +7,7 @@ class Contact extends React.Component {
 		let {t} = this.props;
 		return (
 			<div>
-				<h1> Contacteer ons!</h1>
+				<h1>{t('Contacteer ons!')}</h1>
 				<div className="card" style={{ margin: "1em 0", padding: "1em 1em" }}>
 						<div className="card-body d-flex justify-content-between flex-wrap">
 							<div className="">
