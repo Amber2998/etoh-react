@@ -21,11 +21,11 @@ const Home = ({ t }) => {
 					<div className="col-md-8">
 						<div className="card-body">
 							<div className="card-title d-flex flex-row-reverse">
-								<span style={{color: '#E6007E', fontWeight: 'bolder', fontSize: '32px'}}>EtOH, belgian flavors in a bottle</span>
+								<span style={{color: '#E6007E', fontWeight: 'bolder', fontSize: '32px'}}>{t('EtOH, belgian flavors in a bottle')}</span>
 							</div>
 							<div className="card-text ">
-								<p>Wij, bij EtOH, hechten belang aan lokale teelt. Wij maken gebruik van pure ingrediënten uit ons prachtige Hageland en verwerken deze in onze heerlijke drankjes. </p>
-								<p> Wij zijn een team van 4 studenten, elk met een andere opleiding. Maar hoe verschillend wij ook mogen zijn, we hebben ontdekt dat we allemaal hier ons hart hebben liggen.</p>
+								<p>{t('Wij, bij EtOH, hechten belang aan lokale teelt. Wij maken gebruik van pure ingrediënten uit ons prachtige Hageland en verwerken deze in onze heerlijke drankjes.')} </p>
+								<p> {t('Wij zijn een team van 4 studenten, elk met een andere opleiding. Maar hoe verschillend wij ook mogen zijn, we hebben ontdekt dat we allemaal hier ons hart hebben liggen.')}</p>
 							</div>
 						</div>
 
@@ -38,10 +38,10 @@ const Home = ({ t }) => {
 					<div className="col-md-8">
 						<div className="card-body">
 							<div className="card-title">
-								<span style={{color: '#E6007E', fontWeight: 'bolder', fontSize: '32px'}}> Onze Missie: Lokale passie </span>
+								<span style={{color: '#E6007E', fontWeight: 'bolder', fontSize: '32px'}}>{t('Onze Missie: Lokale passie')} </span>
 							</div>
 							<div className="card-text ">
-								<p> Met onze drankjes willen we onze passie voor lokaal delen met heel Vlaanderen. We willen de aandacht vestigen op lokale, pure teelt. Met dit project willen wij bewijzen dat ook Belgi&euml; heel wat lekkere alcoholische dranken te bieden heeft.</p>
+								<p> {t('Met onze drankjes willen we onze passie voor lokaal delen met heel Vlaanderen. We willen de aandacht vestigen op lokale, pure teelt. Met dit project willen wij bewijzen dat ook België heel wat lekkere alcoholische dranken te bieden heeft.')}</p>
 							</div>
 						</div>
 
@@ -53,9 +53,10 @@ const Home = ({ t }) => {
 			</div>
 			<div>
 				<div className="d-flex justify-content-center">
-					<h3>Onze producten</h3>
+					<h3>{t('Onze producten')}</h3>
 				</div>
 				<div className="d-flex justify-content-center">
+					{/*TODO: add a Link io href here */}
 					<a href="products.html">
 						<img src="Images/Madam%20Cherry.png" height="200em" alt={'madam-cherry'}/>
 						<img src="Images/Rabarber.png" height="200em" alt={'rabarber'}/>
@@ -67,7 +68,7 @@ const Home = ({ t }) => {
 			<div>
 				<br/>
 					<div className="d-flex justify-content-center">
-						<h3>Onze partners</h3>
+						<h3>{t('Onze partners')}</h3>
 					</div>
 					<div className="d-flex justify-content-between">
 						<img src="Images/bsc.jpeg" height="100px" alt={'bsc'}/>
