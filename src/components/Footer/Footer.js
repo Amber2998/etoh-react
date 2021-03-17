@@ -21,7 +21,7 @@ const Footer = ({t, ...props}) => {
 				<div className="d-flex justify-content-center ">
 					<p style={{color: "white"}}> Copyright &copy; 2021 | EtOH </p>
 				</div>
-			<div>
+        			<div>
 				<ButtonGroup>
 					<Button onClick={() => i18n.changeLanguage('nl')}>Nederlands</Button>
 					<Button onClick={() => i18n.changeLanguage('en')}>Engels</Button>
