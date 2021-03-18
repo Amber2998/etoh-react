@@ -11,7 +11,6 @@ import Orders from './components/Orders/Orders';
 import Products from './components/Products/Products';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
-import { Button, ButtonGroup } from 'react-bootstrap';
 import i18n from './i18n';
 import React from 'react';
 
@@ -34,8 +33,8 @@ function App () {
 				}}>
 					<div className={'d-flex justify-content-end'}>
 						<div style={{margin: '0.5em 0'}}>
-							<img src={'Icons/be.svg'} onClick={() => i18n.changeLanguage('nl')} style={{width: '1em', margin: '0 1em'}}/>
-							<img src={'Icons/gb.svg'} onClick={() => i18n.changeLanguage('en')} style={{width: '1em'}}/>
+							<img src={'Icons/be.svg'} onClick={() => i18n.changeLanguage('nl')} alt={'nl-translation'} style={{width: '1em', margin: '0 1em'}}/>
+							<img src={'Icons/gb.svg'} onClick={() => i18n.changeLanguage('en')} alt={'en-translation'} style={{width: '1em'}}/>
 						</div>
 					</div>
 					<Navbar/>
