@@ -18,7 +18,7 @@ const Products = ({t}) => {
 					<div className="col-8">
 						<div className="card-body">
 							<div className="card-title d-flex flex-row-reverse">
-								<span style={{color: "#E6007E", fontWeight: "bolder", fontSize: "24px"}}>
+								<span style={{color: "#C90404", fontWeight: "bolder", fontSize: "24px"}}>
 									{t('Madam Cherry')}
 									<br/> <i style={{color: 'gray', textAlign: 'right', fontWeight: 'normal', fontSize: '14px'}}>{t('Appel-Kers')}</i>
 								</span>
@@ -40,7 +40,7 @@ const Products = ({t}) => {
 					<div className="col-8">
 						<div className="card-body">
 							<div className="card-title d-flex flex-row-reverse">
-								<span style={{color: "#E6007E", fontWeight: "bolder", fontSize: "24px"}}>
+								<span style={{color: "#0D9816", fontWeight: "bolder", fontSize: "24px"}}>
 									{t('Lady Barbara')}
 									<br/> <i style={{color: 'gray', textAlign: 'right', fontWeight: 'normal', fontSize: '14px'}}>{t('Appel-Rabarber')}</i>
 								</span>
@@ -63,7 +63,7 @@ const Products = ({t}) => {
 					<div className="col-8">
 						<div className="card-body">
 							<div className="card-title d-flex flex-row-reverse">
-								<span style={{color: "#E6007E", fontWeight: "bolder", fontSize: "24px"}}>
+								<span style={{color: "#ECC814", fontWeight: "bolder", fontSize: "24px"}}>
 									{t('Miss Ginger')}
 									<br/> <i style={{color: 'gray', textAlign: 'right', fontWeight: 'normal', fontSize: '14px'}}>{t('Appel-Gember')}</i>
 								</span>
@@ -105,7 +105,7 @@ const Products = ({t}) => {
 					<div className="col-8">
 						<div className="card-body">
 								<div className="card-title d-flex flex-row-reverse">
-									<span style={{color: "#E6007E", fontWeight: "bolder", fontSize: "24px"}}>{t('Taste Box')}</span>
+									<span style={{color: "gray", fontWeight: "bolder", fontSize: "24px"}}>{t('Taste Box')}</span>
 								</div>
 							<div className="card-text">
 								<p> {t('Met deze box, kan je heerlijke cocktails maken met onze dranken. Deze box bevat:')}<br/>
