@@ -60,7 +60,7 @@ const Home = ({ t }) => {
 						<img src="Images/Madam%20Cherry.png" height="200em" alt={'madam-cherry'}/>
 						<img src="Images/Rabarber.png" height="200em" alt={'rabarber'}/>
 						<img src="Images/MissGinger.png" height="200em" alt={'miss-ginger'}/>
-						<img src="Images/duchessfran.png" height="200em" alt={'duchess-fran'}/>
+						<img src="Images/Fran.png" height="200em" alt={'duchess-fran'}/>
 					</Link>
 				</div>
 			</div>

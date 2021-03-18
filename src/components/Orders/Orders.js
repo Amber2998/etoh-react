@@ -7,7 +7,7 @@ const Orders = ({t, ...props}) => {
 		<div >
 			<div>
 				<h1>{t('Via dit formulier kan je je bestelling plaatsen.')}</h1>
-				<h2>{t('Hoe werkt het?')}</h2>
+				<h3>{t('Hoe werkt het?')}</h3>
 				<ol>
 					<li>{t('Vul onderstaand formulier in.')}</li>
 					<li>{t('Je ontvangt van ons een e-mail met de betaalgegevens.')}</li>

@@ -79,7 +79,7 @@ const Products = ({t}) => {
 			<div className="card" style={{margin: "1em 0"}}>
 				<div className="row">
 					<div className="col-4">
-						<img src="Images/duchessfran.png" className="card-img" alt="Duchess Fran"
+						<img src="Images/Fran.png" className="card-img" alt="Duchess Fran"
 							 style={{heigth: '100%', objectFit: 'cover'}}/>
 					</div>
 					<div className="col-8">

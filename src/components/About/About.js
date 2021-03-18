@@ -5,7 +5,6 @@ const About = ({t, ...props}) => {
 	return (
 		<div>
 			<h1>Team EtOH</h1>
-       <div className="d-flex justify-content-between flex-wrap">
 			<div className="row">
 				<div className="col-3">
 					<h2 style={{textAlign: "right"}}> Wout</h2>
@@ -36,8 +35,6 @@ const About = ({t, ...props}) => {
 					<p style={{textAlign: "center"}}> Storyteller</p>
 				</div>
 			</div>
-
-		</div>
         </div>
 	);
 }
