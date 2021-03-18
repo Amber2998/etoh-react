@@ -11,9 +11,9 @@ const Products = ({t}) => {
 
 			<div className="card" style={{margin: "1em 0"}}>
 				<div className="row">
-					<div className="col-4">
+					<div className="d-flex justify-content-center col-4">
 						<img src="Images/Madam%20Cherry.png" className="card-img" alt="Madam Cherry"
-							 style={{heigth: "100%", objectFit: "cover"}}/>
+							 style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
 					</div>
 					<div className="col-8">
 						<div className="card-body">
@@ -33,9 +33,9 @@ const Products = ({t}) => {
 			</div>
 			<div className="card" style={{margin: "1em 0"}}>
 				<div className="row">
-					<div className="col-4">
+					<div className="d-flex justify-content-center col-4">
 						<img src="Images/Rabarber.png" className="card-img" alt="Lady Barbara"
-							 style={{heigth: "100%", objectFit: "cover"}}/>
+							 style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
 					</div>
 					<div className="col-8">
 						<div className="card-body">
@@ -57,8 +57,9 @@ const Products = ({t}) => {
 			</div>
 			<div className="card" style={{margin: "1em 0"}}>
 				<div className="row">
-					<div className="col-4">
-						<img src="Images/MissGinger.png" className="card-img" alt="Miss Cherry" style={{heigth: "100%", objectFit: "cover"}}/>
+					<div className="d-flex justify-content-center col-4">
+						<img src="Images/MissGinger.png" className="card-img" alt="Miss Cherry"
+							 style={{height: "14em", width:'auto', objectFit: "cover"}}/>
 					</div>
 					<div className="col-8">
 						<div className="card-body">
@@ -78,9 +79,9 @@ const Products = ({t}) => {
 			</div>
 			<div className="card" style={{margin: "1em 0"}}>
 				<div className="row">
-					<div className="col-4">
+					<div className="d-flex justify-content-center col-4">
 						<img src="Images/Fran.png" className="card-img" alt="Duchess Fran"
-							 style={{heigth: '100%', objectFit: 'cover'}}/>
+							 style={{height: '14em', width:'auto', objectFit: 'cover'}}/>
 					</div>
 					<div className="col-8">
 						<div className="card-body">
@@ -98,9 +99,9 @@ const Products = ({t}) => {
 			</div>
 			<div className="card" style={{margin: '1em 0'}}>
 				<div className="row">
-					<div className="col-4">
+					<div className="d-flex justify-content-center align-items-center col-4">
 						<img src="Images/banner.jpeg" className="card-img" alt="Sfeerfoto"
-							 style={{height: '100%', objectFit: 'cover'}}/>
+							 style={{height: '12em', width:'12em', objectFit: 'cover'}}/>
 					</div>
 					<div className="col-8">
 						<div className="card-body">
