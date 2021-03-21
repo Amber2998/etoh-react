@@ -14,6 +14,7 @@ import Footer from './components/Footer/Footer';
 import i18n from './i18n';
 import React from 'react';
 import { Button, Modal } from 'react-bootstrap';
+import AgeDenial from './components/AgeDenial/AgeDenial';
 
 
 class App extends React.Component {
@@ -49,6 +50,8 @@ class App extends React.Component {
 							show={!this.state.oldEnough && !this.state.checkedAge}
 							backdrop={'static'}
 							keyboard={false}
+							centered
+							backdropClassName={'blurredBackdrop'}
 						>
 							<Modal.Header>
 								<Modal.Title>Leeftijdscheck</Modal.Title>
@@ -88,7 +91,8 @@ class App extends React.Component {
 									</Route>
 								</Switch>
 							</div>
-							: this.state.checkedAge ? <div>Jammer</div> : ''
+							: this.state.checkedAge ? <AgeDenial/>:
+								<div className='d-flex justify-content-center'> Goed geprobeerd :) </div>
 						}
 						<Footer/>
 					</div>
