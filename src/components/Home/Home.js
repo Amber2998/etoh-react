@@ -57,10 +57,10 @@ const Home = ({ t }) => {
 				</div>
 				<div className="d-flex justify-content-center">
 					<Link to={'/products'}>
-						<img src="Images/Madam%20Cherry.png" height="200em" alt={'madam-cherry'}/>
-						<img src="Images/Rabarber.png" height="200em" alt={'rabarber'}/>
-						<img src="Images/MissGinger.png" height="200em" alt={'miss-ginger'}/>
-						<img src="Images/Fran.png" height="200em" alt={'duchess-fran'}/>
+						<img className={'ladyImage'} src="Images/Madam%20Cherry.png" alt={'madam-cherry'} />
+						<img className={'ladyImage'} src="Images/Rabarber.png" alt={'rabarber'} />
+						<img className={'ladyImage'} src="Images/MissGinger.png" alt={'miss-ginger'} />
+						<img className={'ladyImage'} src="Images/Fran.png" alt={'duchess-fran'} />
 					</Link>
 				</div>
 			</div>
@@ -69,7 +69,7 @@ const Home = ({ t }) => {
 					<div className="d-flex justify-content-center">
 						<h3>{t('Onze partners')}</h3>
 					</div>
-					<div className="d-flex justify-content-between">
+					<div className="d-flex flex-wrap justify-content-between">
 						<img src="Images/bsc.jpeg" height="100px" alt={'bsc'}/>
 						<img src="Images/pipo.png" height="100px" alt={'pipo'}/>
 						<img src="Images/fruitvanhellemont.jpeg" height="100px" alt={'fruit-vanhellemont'}/>
