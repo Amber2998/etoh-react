@@ -21,7 +21,9 @@ const Home = ({ t }) => {
 					<div className="col-md-8">
 						<div className="card-body">
 							<div className="card-title d-flex flex-row-reverse">
-								<span style={{color: '#E6007E', fontWeight: 'bolder', fontSize: '32px'}}>{t('EtOH, belgian flavors in a bottle')}</span>
+								<span style={{color: '#E6007E', fontWeight: 'bolder', fontSize: '32px'}}>
+                                                <img src="Images/pinkapple.png" alt="apple" height="32px"/>
+                                    {t('EtOH, belgian flavors in a bottle')}</span>
 							</div>
 							<div className="card-text ">
 								<p>{t('Wij, bij EtOH, hechten belang aan lokale teelt. Wij maken gebruik van pure ingrediënten uit ons prachtige Hageland en verwerken deze in onze heerlijke drankjes.')} </p>
@@ -38,7 +40,9 @@ const Home = ({ t }) => {
 					<div className="col-md-8">
 						<div className="card-body">
 							<div className="card-title">
-								<span style={{color: '#E6007E', fontWeight: 'bolder', fontSize: '32px'}}>{t('Onze Missie: Lokale passie')} </span>
+								<span style={{color: '#E6007E', fontWeight: 'bolder', fontSize: '32px'}}>
+                                      <img src="Images/pinkapple.png" alt="apple" height="32px"/>
+                                    {t('Onze Missie: Lokale passie')} </span>
 							</div>
 							<div className="card-text ">
 								<p> {t('Met onze drankjes willen we onze passie voor lokaal delen met heel Vlaanderen. We willen de aandacht vestigen op lokale, pure teelt. Met dit project willen wij bewijzen dat ook België heel wat lekkere alcoholische dranken te bieden heeft.')}</p>
@@ -53,7 +57,7 @@ const Home = ({ t }) => {
 			</div>
 			<div>
 				<div className="d-flex justify-content-center">
-					<h3>{t('Onze producten')}</h3>
+					<h3><img src="Images/greenapple.png" alt="apple" height="24px"/>{t('Onze producten')}</h3>
 				</div>
 				<div className="d-flex justify-content-center">
 					<Link to={'/products'}>
@@ -67,7 +71,9 @@ const Home = ({ t }) => {
 			<div>
 				<br/>
 					<div className="d-flex justify-content-center">
-						<h3>{t('Onze partners')}</h3>
+						<h3>
+                          <img src="Images/greenapple.png" alt="apple" height="24px"/>
+                        {t('Onze partners')}</h3>
 					</div>
 					<div className="d-flex flex-wrap justify-content-between">
 						<img src="Images/bsc.jpeg" height="100px" alt={'bsc'}/>

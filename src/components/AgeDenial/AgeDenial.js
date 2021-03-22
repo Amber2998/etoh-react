@@ -8,7 +8,7 @@ function AgeDenial () {
 			<Card border={'danger'}>
 				<Card.Header bg='Danger' style={{backgroundColor: '#E6007E', color: 'white'}}>Leeftijdsbeperking</Card.Header>
 				<Card.Body>
-					Als je niet ouder bent dan 18 jaar mogen we je helaas geen toegang verlenen tot deze website.
+					Als je niet ouder bent dan 18 jaar, mogen we je helaas geen toegang verlenen tot deze website.
 				</Card.Body>
 			</Card>
 		</div>

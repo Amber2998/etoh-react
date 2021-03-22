@@ -18,6 +18,11 @@ class Contact extends React.Component {
 										Dries 12 <br/>
 										3380 Glabbeek
 									</p>
+                        <img src="Images/greenapple.png" alt="apple" height="24px"/>
+            <img src="Images/redapple.png" alt="apple" height="24px"/>
+            <img src="Images/pinkapple.png" alt="apple" height="24px"/>
+            <img src="Images/yellowapple.png" alt="apple" height="24px"/>
+            <p></p>
 								</div>
 							</div>
 								<iframe
