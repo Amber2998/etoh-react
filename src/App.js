@@ -1,9 +1,5 @@
 import './App.css';
-import {
-	HashRouter as Router,
-	Switch,
-	Route
-} from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Contact from './components/Contact/Contact';
@@ -13,15 +9,60 @@ import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import i18n from './i18n';
 import React from 'react';
-import { Button, Modal } from 'react-bootstrap';
 import AgeDenial from './components/AgeDenial/AgeDenial';
 import AgeModal from './components/AgeModal/AgeModal';
+import {withCookies, Cookies} from 'react-cookie';
+import { instanceOf } from 'prop-types';
+import CookieBanner from './components/CookieBanner/CookieBanner';
+import { Button } from 'react-bootstrap';
 
 
 class App extends React.Component {
-	state = { oldEnough: false, checkedAge: false };
+
+	static propTypes = {
+		cookies: instanceOf(Cookies).isRequired
+	}
+
+	state = {
+		oldEnough: this.props.cookies.get("oldEnough") === "true" || false,
+		checkedAge: this.props.cookies.get("checkedAge") === "true" || false,
+		allowsCookies: this.props.cookies.get("allowsCookies") === "true" || false,
+		checkedCookies: this.props.cookies.get("checkedCookies") === "true" || false
+	};
+
+	handleModal = (oldEnough, checkedAge) => {
+		let {cookies} = this.props;
+		let {allowsCookies} = this.state;
+
+		if (allowsCookies) {
+			cookies.set("oldEnough", oldEnough, { path:'/'});
+			cookies.set("checkedAge", checkedAge, { path:'/'});
+		}
+		this.setState({oldEnough})
+		this.setState({checkedAge})
+	}
+
+	cookieYesFn = () => {
+		let {cookies} = this.props;
+		let {oldEnough} = this.state;
+		cookies.set("oldEnough", oldEnough, { path:'/'});
+		cookies.set("allowsCookies", true, {path:'/'})
+		cookies.set("checkedCookies", true, {path:'/'})
+
+		this.setState({allowsCookies: cookies.get("allowsCookies")})
+		this.setState({checkedCookies: cookies.get("checkedCookies")})
+	}
+
+	cookieNoFn = () => {
+		this.props.cookies.remove("oldEnough");
+		this.props.cookies.remove("allowsCookies");
+		this.props.cookies.remove("checkedCookies");
+		this.props.cookies.remove("checkedAge");
+		this.setState({checkedCookies: true, allowsCookies: false});
+	}
 
 	render () {
+		console.log(this.state);
 		return (
 			<Router>
 				<div className='opperDiv' style={{
@@ -45,11 +86,11 @@ class App extends React.Component {
 
 						<AgeModal
 							show={!this.state.oldEnough && !this.state.checkedAge}
-							yesFn={() => this.setState(s => ({ ...s, oldEnough: true, checkedAge: true }))}
 							noFn={() => this.setState(s => ({ ...s, checkedAge: true }))}
+							yesFn={() => this.handleModal(true, true)}
 						/>
 
-						{this.state.oldEnough  ? <div className={"content"}>
+						{this.state.oldEnough ? <div className={"content"}>
 								<Switch>
 									<Route path="/about">
 										<About/>
@@ -71,6 +112,12 @@ class App extends React.Component {
 							: this.state.checkedAge ? <AgeDenial/>:
 								<div className='d-flex justify-content-center'> Goed geprobeerd :) </div>
 						}
+
+						{!this.state.checkedCookies && <CookieBanner yesFn={this.cookieYesFn} noFn={this.cookieNoFn} />}
+						{this.state.checkedCookies
+						&& this.state.allowsCookies
+						&& this.state.oldEnough
+						&& <Button onClick={this.cookieNoFn} > Ge zei wel de ge cookies wou, maar met dit knopje kunt ge u bedenken </Button>}
 						<Footer/>
 					</div>
 				</div>
@@ -80,4 +127,4 @@ class App extends React.Component {
 	}
 }
 
-export default App;
+export default withCookies(App);
