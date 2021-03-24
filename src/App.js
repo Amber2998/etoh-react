@@ -15,6 +15,7 @@ import i18n from './i18n';
 import React from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import AgeDenial from './components/AgeDenial/AgeDenial';
+import AgeModal from './components/AgeModal/AgeModal';
 
 
 class App extends React.Component {
@@ -23,7 +24,7 @@ class App extends React.Component {
 	render () {
 		return (
 			<Router>
-				<div style={{
+				<div className='opperDiv' style={{
 					backgroundImage: `url(Images/Img_back.png)`,
 					backgroundRepeat: 'no-repeat',
 					backgroundAttachment: 'scroll',
@@ -31,10 +32,6 @@ class App extends React.Component {
 					height: '100%'
 				}}>
 					<div className={"container"} style={{
-						backgroundSize: '62%',
-						height: '100%',
-						display: 'flex',
-						flexDirection: 'column'
 					}}>
 						<div className={'d-flex justify-content-end'}>
 							<div style={{ margin: '0.5em 0' }}>
@@ -46,31 +43,11 @@ class App extends React.Component {
 						</div>
 						<Navbar/>
 
-						<Modal
+						<AgeModal
 							show={!this.state.oldEnough && !this.state.checkedAge}
-							backdrop={'static'}
-							keyboard={false}
-							centered
-							backdropClassName={'blurredBackdrop'}
-						>
-							<Modal.Header>
-								<Modal.Title>Leeftijdscheck</Modal.Title>
-							</Modal.Header>
-							<Modal.Body>
-								Alcohol voor iedereen! Ben je +18?
-							</Modal.Body>
-							<Modal.Footer>
-								<Button variant={'secondary'}
-										onClick={() => this.setState(s => ({
-											...s,
-											oldEnough: true,
-											checkedAge: true
-										}))}
-								>Ja</Button>
-								<Button onClick={() => this.setState(s => ({ ...s, checkedAge: true }))}>Nee</Button>
-							</Modal.Footer>
-
-						</Modal>
+							yesFn={() => this.setState(s => ({ ...s, oldEnough: true, checkedAge: true }))}
+							noFn={() => this.setState(s => ({ ...s, checkedAge: true }))}
+						/>
 
 						{this.state.oldEnough  ? <div className={"content"}>
 								<Switch>
