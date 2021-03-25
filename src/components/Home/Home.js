@@ -21,7 +21,7 @@ const Home = ({ t }) => {
 					<div className="col-md-8">
 						<div className="card-body">
 							<div className="card-title d-flex flex-row-reverse">
-								<span style={{color: '#E6007E', fontWeight: 'bolder', fontSize: '32px'}}>
+								<span className={'apple-text'} style={{color: '#E6007E', fontWeight: 'bolder', fontSize: '32px'}}>
                                                 <img src="Images/pinkapple.png" alt="apple" height="32px"/>
                                     {t('EtOH, belgian flavors in a bottle')}</span>
 							</div>
@@ -40,7 +40,7 @@ const Home = ({ t }) => {
 					<div className="col-md-8">
 						<div className="card-body">
 							<div className="card-title">
-								<span style={{color: '#E6007E', fontWeight: 'bolder', fontSize: '32px'}}>
+								<span className={'apple-text'} style={{color: '#E6007E', fontWeight: 'bolder', fontSize: '32px'}}>
                                       <img src="Images/pinkapple.png" alt="apple" height="32px"/>
                                     {t('Onze Missie: Lokale passie')} </span>
 							</div>
@@ -57,7 +57,7 @@ const Home = ({ t }) => {
 			</div>
 			<div>
 				<div className="d-flex justify-content-center">
-					<h3><img src="Images/greenapple.png" alt="apple" height="24px"/>{t('Onze producten')}</h3>
+					<h3 className={'apple-text'}> <img src="Images/greenapple.png" alt="apple" height="24px"/>{t('Onze producten')}</h3>
 				</div>
 				<div className="d-flex justify-content-center">
 					<Link to={'/products'}>
@@ -71,7 +71,7 @@ const Home = ({ t }) => {
 			<div>
 				<br/>
 					<div className="d-flex justify-content-center">
-						<h3>
+						<h3 className={'apple-text'}>
                           <img src="Images/greenapple.png" alt="apple" height="24px"/>
                         {t('Onze partners')}</h3>
 					</div>

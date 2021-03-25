@@ -221,4 +221,21 @@ body.modal-open > :not(.modal) {
 .ladyImage {
     width: 100%;
     max-width: 15em;
-    height: auto;}
+    height: auto;
+}
+
+img[alt='apple'] {
+    margin: 0 0.2em;
+}
+
+i.sub-text {
+    color: gray;
+    text-align: right;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.apple-text {
+    display: flex;
+    align-items: center;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
+import { Image } from 'react-bootstrap';
 
 
 const Products = ({t}) => {
@@ -11,17 +12,19 @@ const Products = ({t}) => {
 
 			<div className="card" style={{margin: "1em 0"}}>
 				<div className="row">
-					<div className="d-flex justify-content-center col-5">
+					<div className="d-flex justify-content-center col-3">
 						<img src="Images/Rabarber.png" className="card-img" alt="Lady Barbara"
 							 style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
 					</div>
-					<div className="col-7">
+					<div className="col-6">
 						<div className="card-body">
 							<div className="card-title d-flex flex-row-reverse">
-								<span style={{color: "#0D9816", fontWeight: "bolder", fontSize: "24px"}}>
-        <img src="Images/greenapple.png" alt="apple" height="24px"/>
-									{t('Lady Barbara')}
-									<br/> <i style={{color: 'gray', textAlign: 'right', fontWeight: 'normal', fontSize: '14px'}}>{t('Appel-Rabarber')}</i>
+								<span className='d-flex flex-column' style={{color: "#0D9816", fontWeight: "bolder", fontSize: "24px"}}>
+									<div className={'apple-text'}>
+										<img src="Images/greenapple.png" alt="apple" height="24px"/>
+										{t('Lady Barbara')}
+									</div>
+									<i className={'sub-text'}>{t('Appel-Rabarber')}</i>
 								</span>
 							</div>
 							<div className="card-text">
@@ -29,6 +32,10 @@ const Products = ({t}) => {
 								<h4 style={{fontSize: '14px'}}>{t('Prijs')}: &euro;14,95</h4>
 							</div>
 						</div>
+					</div>
+					<div className="d-flex justify-content-center col-3">
+						<img src="Images/Rabarber.png" className="card-img" alt="Lady Barbara"
+							 style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
 					</div>
 				</div>
 			</div>
@@ -41,10 +48,12 @@ const Products = ({t}) => {
 					<div className="col-7">
 						<div className="card-body">
 							<div className="card-title d-flex flex-row-reverse">
-								<span style={{color: "#C90404", fontWeight: "bolder", fontSize: "24px"}}>
-                                    <img src="Images/redapple.png" alt="apple" height="24px"/>
-									{t('Madam Cherry')}
-									<br/> <i style={{color: 'gray', textAlign: 'right', fontWeight: 'normal', fontSize: '14px'}}>{t('Appel-Kers')}</i>
+								<span className='d-flex flex-column' style={{color: "#C90404", fontWeight: "bolder", fontSize: "24px"}}>
+									<div className={'apple-text'}>
+										<img src="Images/redapple.png" alt="apple" height="24px"/>
+										{t('Madam Cherry')}
+									</div>
+									<i className={'sub-text'}>{t('Appel-Kers')}</i>
 								</span>
 							</div>
 							<div className="card-text">
@@ -66,10 +75,12 @@ const Products = ({t}) => {
 					<div className="col-7">
 						<div className="card-body">
 							<div className="card-title d-flex flex-row-reverse">
-								<span style={{color: "#E6007E", fontWeight: "bolder", fontSize: "24px"}}>
-                                    <img src="Images/pinkapple.png" alt="apple" height="24px"/>
-									{t('Duchess Fran')}
-									<br/> <i style={{color: 'gray', textAlign: 'right', fontWeight: 'normal', fontSize: '14px'}}>{t('Appel-Framboos')}</i>
+								<span className='d-flex flex-column'  style={{color: "#E6007E", fontWeight: "bolder", fontSize: "24px"}}>
+									<div className={'apple-text'}>
+										<img src="Images/pinkapple.png" alt="apple" height="24px"/>
+										{t('Duchess Fran')}
+									</div>
+									<i className={'sub-text'}>{t('Appel-Framboos')}</i>
 								</span>
 							</div>
 							<p>{t('Duchess Fran, deze chique dame neemt jou mee op een smaakvolle audiëntie. Een koninklijke combinatie van framboos en appel.')}</p>
@@ -78,9 +89,8 @@ const Products = ({t}) => {
 					</div>
 				</div>
 			</div>
-                                 
-            
-                                 			<div className="card" style={{margin: "1em 0"}}>
+
+			<div className="card" style={{margin: "1em 0"}}>
 				<div className="row">
 					<div className="d-flex justify-content-center col-5">
 						<img src="Images/MissGinger.png" className="card-img" alt="Miss Cherry"
@@ -89,10 +99,12 @@ const Products = ({t}) => {
 					<div className="col-7">
 						<div className="card-body">
 							<div className="card-title d-flex flex-row-reverse">
-								<span style={{color: "#ECC814", fontWeight: "bolder", fontSize: "24px"}}>
-                                    <img src="Images/yellowapple.png" alt="apple" height="24px"/>
-									{t('Miss Ginger')}
-									<br/> <i style={{color: 'gray', textAlign: 'right', fontWeight: 'normal', fontSize: '14px'}}>{t('Appel-Gember')}</i>
+								<span className={'d-flex flex-column'} style={{color: "#ECC814", fontWeight: "bolder", fontSize: "24px"}}>
+									<div className={'apple-text'}>
+										<img src="Images/yellowapple.png" alt="apple" height="24px"/>
+										{t('Miss Ginger')}
+									</div>
+									<i className={'sub-text'}>{t('Appel-Gember')}</i>
 								</span>
 							</div>
 							<div className="card-text">
@@ -111,9 +123,9 @@ const Products = ({t}) => {
 					</div>
 					<div className="col-7">
 						<div className="card-body">
-								<div className="card-title d-flex flex-row-reverse">
-									<span style={{color: "gray", fontWeight: "bolder", fontSize: "24px"}}>{t('Taste Box')}</span>
-								</div>
+							<div className="card-title d-flex flex-row-reverse">
+								<span style={{color: "gray", fontWeight: "bolder", fontSize: "24px"}}>{t('Taste Box')}</span>
+							</div>
 							<div className="card-text">
 								<p> {t('Met deze box, kan je heerlijke cocktails maken met onze dranken. Deze box bevat:')}<br/>
 									1 x {t('Fles (500ml) naar keuze - gelieve dit door te geven bij bestelling')}<br/>
