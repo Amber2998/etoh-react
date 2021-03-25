@@ -15,7 +15,7 @@ const AgeModal = (props) => {
 				<Modal.Title>Leeftijdscheck</Modal.Title>
 			</Modal.Header>
 			<Modal.Body>
-				Alcohol voor iedereen! Ben je +18?
+				Alcohol is niet voor iedereen! Ben je +18?
 			</Modal.Body>
 			<Modal.Footer>
 				<Button variant={'secondary'} onClick={props.yesFn} >Ja</Button>

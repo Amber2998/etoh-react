@@ -6,7 +6,7 @@ const Home = ({ t }) => {
 	return <div>
 			<div className="box">
 				<div className="fadingbox">
-					<img src="Images/banner4.jpg" alt={'banner'}/>
+					<img src="Images/banner5.png" alt={'banner'}/>
 					<Link to={"/orders"}>
 						<div className="btn" >{t('Bestel hier!')}</div>
 					</Link>
@@ -16,7 +16,7 @@ const Home = ({ t }) => {
 			<div className="card" style={{margin: '1em 0'}}>
 				<div className="row">
 					<div className="col-md-4">
-						<img src="Images/banner.jpeg" className="card-img" alt="Test1" style={{height: '100%', objecFit: 'cover'}}/>
+						<img src="Images/test3.png" className="card-img" alt="Test1" style={{height: '100%', objecFit: 'cover'}}/>
 					</div>
 					<div className="col-md-8">
 						<div className="card-body">
@@ -51,7 +51,7 @@ const Home = ({ t }) => {
 
 					</div>
 					<div className="col-md-4">
-						<img src="Images/banner3.jpeg" className="card-img" alt="Test1" style={{height: '100%', objectFit: 'cover'}}/>
+						<img src="Images/test5.jpeg" className="card-img" alt="Test1" style={{height: '100%', objectFit: 'cover'}}/>
 					</div>
 				</div>
 			</div>

@@ -117,7 +117,7 @@ const Products = ({t}) => {
 							<div className="card-text">
 								<p> {t('Met deze box, kan je heerlijke cocktails maken met onze dranken. Deze box bevat:')}<br/>
 									1 x {t('Fles (500ml) naar keuze - gelieve dit door te geven bij bestelling')}<br/>
-									4 x {t('Tonic')} (25cl) <br/>
+									2 x {t('Tonic')} (25cl) <br/>
 									2 x {t('EtOH glas')} <br/>
 									{t('verrassing')} <br/></p>
 								<h4 style={{fontSize: '14px'}}>{t('Prijs')}: &euro;24,95</h4>
