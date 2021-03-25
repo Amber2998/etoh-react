@@ -18,8 +18,8 @@ const AgeModal = (props) => {
 				Alcohol is niet voor iedereen! Ben je +18?
 			</Modal.Body>
 			<Modal.Footer>
-				<Button variant={'secondary'} onClick={props.yesFn} >Ja</Button>
-				<Button onClick={props.noFn}>Nee</Button>
+				<Button variant={'success'} onClick={props.yesFn} >Ja</Button>
+				<Button variant={'danger'} onClick={props.noFn}>Nee</Button>
 			</Modal.Footer>
 
 		</Modal>
