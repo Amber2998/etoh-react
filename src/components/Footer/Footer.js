@@ -1,9 +1,10 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
+import { Button } from 'react-bootstrap';
 
 
-const Footer = ({ t, ...props }) => {
-
+const Footer = ({ t, cookieState, ...props }) => {
+	let {checkedCookies, allowsCookies, oldEnough, cookieNoFn} = cookieState;
 	return (
 		<footer>
 			<div className="d-flex justify-content-center">
@@ -20,6 +21,10 @@ const Footer = ({ t, ...props }) => {
 			<div className="d-flex justify-content-center ">
 				<p style={{ color: "white" }}> Copyright &copy; 2021 | EtOH </p>
 			</div>
+			{ checkedCookies
+			&& allowsCookies
+			&& oldEnough
+			&& <a onClick={cookieNoFn} className={'delete-cookie-button d-flex justify-content-center'}>Cookies verwijderen</a>}
 		</footer>
 	)
 }

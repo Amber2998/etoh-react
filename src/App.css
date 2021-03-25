@@ -180,6 +180,15 @@ button:hover {
 
 }
 
+.delete-cookie-button {
+    color: white;
+}
+
+.delete-cookie-button:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .box .btn:hover {
     background-color: white;
     color: #ECC814;

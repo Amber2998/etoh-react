@@ -62,7 +62,7 @@ class App extends React.Component {
 	}
 
 	render () {
-		console.log(this.state);
+		let {checkedCookies, allowsCookies, oldEnough} = this.state;
 		return (
 			<Router>
 				<div className='opperDiv' style={{
@@ -113,12 +113,12 @@ class App extends React.Component {
 								<div className='d-flex justify-content-center'> Goed geprobeerd :) </div>
 						}
 
-						{!this.state.checkedCookies && <CookieBanner yesFn={this.cookieYesFn} noFn={this.cookieNoFn} />}
-						{this.state.checkedCookies
-						&& this.state.allowsCookies
-						&& this.state.oldEnough
-						&& <Button onClick={this.cookieNoFn} > Ge zei wel de ge cookies wou, maar met dit knopje kunt ge u bedenken </Button>}
-						<Footer/>
+						<div className={'d-flex flex-column align-items-stretch'}>
+							{!this.state.checkedCookies && <CookieBanner yesFn={this.cookieYesFn} noFn={this.cookieNoFn} />}
+							<Footer
+								cookieState={{checkedCookies, allowsCookies, oldEnough, cookieNoFn: this.cookieNoFn}}
+							/>
+						</div>
 					</div>
 				</div>
 			</Router>
