@@ -3,20 +3,44 @@ import { Link } from 'react-router-dom';
 import { withNamespaces } from 'react-i18next';
 
 const Home = ({ t }) => {
-	return <div>
+	return <div>                               
 			<div className="box">
-				<div className="fadingbox">
-					<img src="Images/banner5.png" alt={'banner'}/>
-					<Link to={"/orders"}>
+				<div className="fadingbox">                                             
+<div id="demo" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+<div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Images/banner5.png" alt="test" width="100%"/>
+    </div>
+    <div class="carousel-item">
+      <img src="Images/test5.png" alt="test" width="100%"/>
+    </div>
+    <div class="carousel-item">
+      <img src="Images/test3.png" alt="test" width="100%"/>
+    </div>
+    </div>
+<a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>                                            
+  <Link to={"/orders"}>
 						<div className="btn" >{t('Bestel hier!')}</div>
 					</Link>
 				</div>
-			</div>
+			</div>                              
+
 
 			<div className="card" style={{margin: '1em 0'}}>
 				<div className="row">
 					<div className="col-md-4">
-						<img src="Images/test3.png" className="card-img" alt="Test1" style={{height: '100%', objecFit: 'cover'}}/>
+						<img src="Images/test3.png" className="card-img" alt="Test1" style={{width: '100%', objecFit: 'cover'}}/>
 					</div>
 					<div className="col-md-8">
 						<div className="card-body">

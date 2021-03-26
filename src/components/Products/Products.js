@@ -8,8 +8,7 @@ const Products = ({t}) => {
 		<div>
 			<h1>{t('Ontdek hier onze producten')}</h1>
 			<p>{t('Onze producten komen in hersluitbare glazen flessen van 500ml en bevatten een alcoholpercentage van 17%.')}</p>
-
-
+        <p>{t('yesyesyes tien windjes in een fles')}</p>
 			<div className="card" style={{margin: "1em 0"}}>
 				<div className="row">
 					<div className="d-flex justify-content-center col-3">
@@ -34,18 +33,18 @@ const Products = ({t}) => {
 						</div>
 					</div>
 					<div className="d-flex justify-content-center col-3">
-						<img src="Images/Rabarber.png" className="card-img" alt="Lady Barbara"
+						<img src="Images/test4.png" className="card-img" alt="Lady Barbara"
 							 style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
 					</div>
 				</div>
 			</div>
-			<div className="card" style={{margin: "1em 0"}}>
+		<div className="card" style={{margin: "1em 0"}}>
 				<div className="row">
-					<div className="d-flex justify-content-center col-5">
+					<div className="d-flex justify-content-center col-3">
 						<img src="Images/Madam Cherry.png" className="card-img" alt="Madam Cherry"
 							 style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
 					</div>
-					<div className="col-7">
+					<div className="col-6">
 						<div className="card-body">
 							<div className="card-title d-flex flex-row-reverse">
 								<span className='d-flex flex-column' style={{color: "#C90404", fontWeight: "bolder", fontSize: "24px"}}>
@@ -59,23 +58,25 @@ const Products = ({t}) => {
 							<div className="card-text">
 								<p>{t('Maak kennis met Madam Cherry: zij brengt de zoete liefde van appel en kers tot bij jou. Met haar sterk karakter verovert zij jouw hart.')}</p>
 								<h4 style={{fontSize: '14px'}}>{t('Prijs')}: &euro;14,95</h4>
-								<div className="card-title d-flex flex-row-reverse">
-								</div>
 							</div>
 						</div>
 					</div>
+					<div className="d-flex justify-content-center col-3">
+						<img src="Images/test4.png" className="card-img" alt="Madam Cherry"
+							 style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
+					</div>
 				</div>
 			</div>
-			<div className="card" style={{margin: "1em 0"}}>
+		<div className="card" style={{margin: "1em 0"}}>
 				<div className="row">
-					<div className="d-flex justify-content-center col-5">
+					<div className="d-flex justify-content-center col-3">
 						<img src="Images/Fran.png" className="card-img" alt="Duchess Fran"
-							 style={{height: '14em', width:'auto', objectFit: 'cover'}}/>
+							 style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
 					</div>
-					<div className="col-7">
+					<div className="col-6">
 						<div className="card-body">
 							<div className="card-title d-flex flex-row-reverse">
-								<span className='d-flex flex-column'  style={{color: "#E6007E", fontWeight: "bolder", fontSize: "24px"}}>
+								<span className='d-flex flex-column' style={{color: "#E6007E", fontWeight: "bolder", fontSize: "24px"}}>
 									<div className={'apple-text'}>
 										<img src="Images/pinkapple.png" alt="apple" height="24px"/>
 										{t('Duchess Fran')}
@@ -83,28 +84,34 @@ const Products = ({t}) => {
 									<i className={'sub-text'}>{t('Appel-Framboos')}</i>
 								</span>
 							</div>
-							<p>{t('Duchess Fran, deze chique dame neemt jou mee op een smaakvolle audiëntie. Een koninklijke combinatie van framboos en appel.')}</p>
-							<h4 style={{fontSize: '14px'}}>{t('Prijs')}: &euro;14,95</h4>
+							<div className="card-text">
+								<p>{t('Duchess Fran, deze chique dame neemt jou mee op een smaakvolle audiëntie. Een koninklijke combinatie van framboos en appel.')}</p>
+								<h4 style={{fontSize: '14px'}}>{t('Prijs')}: &euro;14,95</h4>
+							</div>
 						</div>
+					</div>
+					<div className="d-flex justify-content-center col-3">
+						<img src="Images/test4.png" className="card-img" alt="Duchess Fran"
+							 style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
 					</div>
 				</div>
 			</div>
 
-			<div className="card" style={{margin: "1em 0"}}>
+		<div className="card" style={{margin: "1em 0"}}>
 				<div className="row">
-					<div className="d-flex justify-content-center col-5">
-						<img src="Images/MissGinger.png" className="card-img" alt="Miss Cherry"
-							 style={{height: "14em", width:'auto', objectFit: "cover"}}/>
+					<div className="d-flex justify-content-center col-3">
+						<img src="Images/MissGinger.png"  className="card-img" alt="Miss Ginger"
+							 style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
 					</div>
-					<div className="col-7">
+					<div className="col-6">
 						<div className="card-body">
 							<div className="card-title d-flex flex-row-reverse">
-								<span className={'d-flex flex-column'} style={{color: "#ECC814", fontWeight: "bolder", fontSize: "24px"}}>
+								<span className='d-flex flex-column' style={{color: "#ECC814", fontWeight: "bolder", fontSize: "24px"}}>
 									<div className={'apple-text'}>
 										<img src="Images/yellowapple.png" alt="apple" height="24px"/>
 										{t('Miss Ginger')}
 									</div>
-									<i className={'sub-text'}>{t('Appel-Gember')}</i>
+									<i className={'sub-text'}>{t('Appel-Framboos')}</i>
 								</span>
 							</div>
 							<div className="card-text">
@@ -112,6 +119,10 @@ const Products = ({t}) => {
 								<h4 style={{fontSize: '14px'}}>{t('Prijs')}: &euro;14,95</h4>
 							</div>
 						</div>
+					</div>
+					<div className="d-flex justify-content-center col-3">
+						<img src="Images/test4.png"  className="card-img" alt="Miss Ginger"
+							 style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
 					</div>
 				</div>
 			</div>
