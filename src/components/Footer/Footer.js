@@ -1,7 +1,5 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
-import { Button } from 'react-bootstrap';
-
 
 const Footer = ({ t, cookieState, ...props }) => {
 	let {checkedCookies, allowsCookies, oldEnough, cookieNoFn} = cookieState;

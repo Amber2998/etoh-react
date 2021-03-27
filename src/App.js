@@ -14,7 +14,6 @@ import AgeModal from './components/AgeModal/AgeModal';
 import {withCookies, Cookies} from 'react-cookie';
 import { instanceOf } from 'prop-types';
 import CookieBanner from './components/CookieBanner/CookieBanner';
-import { Button } from 'react-bootstrap';
 
 
 class App extends React.Component {
