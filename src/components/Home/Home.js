@@ -8,7 +8,6 @@ const Home = ({ t }) => {
 	return <div>
 		<div className="box">
 			<div className="fadingbox">
-				<div id="demo" class="carousel slide" data-ride="carousel">
 
 					<Carousel>
 						<CarouselItem>
@@ -22,7 +21,6 @@ const Home = ({ t }) => {
 						</CarouselItem>
 					</Carousel>
 
-				</div>
 				<Link to={"/orders"}>
 					<div className="btn">{t('Bestel hier!')}</div>
 				</Link>

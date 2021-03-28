@@ -73,7 +73,7 @@ class App extends React.Component {
 				}}>
 					<div className={"container"} style={{
 					}}>
-						<div className={'d-flex justify-content-end'}>
+						<div className={'d-flex justify-content-end'} style={{flex: '0 0 auto'}}>
 							<div style={{ margin: '0.5em 0' }}>
 								<img src={'Icons/be.svg'} onClick={() => i18n.changeLanguage('nl')}
 									 alt={'nl-translation'} style={{ width: '1em', margin: '0 1em' }}/>
