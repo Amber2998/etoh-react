@@ -17,7 +17,10 @@ const Home = ({ t }) => {
 							<img src="Images/test3.png" alt="test" width="100%"/>
 						</CarouselItem>
 						<CarouselItem>
-							<img src="Images/test5.jpeg" alt="test" width="100%"/>
+							<img src="Images/foto3.jpg" alt="test" width="100%"/>
+						</CarouselItem>
+    	<CarouselItem>
+							<img src="Images/foto7.jpg" alt="test" width="100%"/>
 						</CarouselItem>
 					</Carousel>
 
@@ -69,7 +72,7 @@ const Home = ({ t }) => {
 
 				</div>
 				<div className="col-md-4">
-					<img src="Images/test5.jpeg" className="card-img" alt="Test1"
+					<img src="Images/foto1.jpg" className="card-img" alt="Test1"
 						 style={{ height: '100%', objectFit: 'cover' }}/>
 				</div>
 			</div>

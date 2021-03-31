@@ -31,7 +31,7 @@ const Products = ({t}) => {
 							</Card.Text>
 						</Card.Body>
 
-						<Card.Img src={'Images/test4.png'} style={{height:'14em', width: 'auto', objectFit: 'cover'}}/>
+						<Card.Img src={'Images/foto4.jpg'} style={{height:'14em', width: 'auto', objectFit: 'cover'}}/>
 
 					</div>
 				</div>
@@ -58,7 +58,7 @@ const Products = ({t}) => {
 								<h4 style={{fontSize: '14px'}}>{t('Prijs')}: &euro;14,95</h4>
 							</Card.Text>
 						</Card.Body>
-						<Card.Img src={'Images/test4.png'} style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
+						<Card.Img src={'Images/Foto2.jpg'} style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
 					</div>
 				</div>
 			</Card>
@@ -84,7 +84,7 @@ const Products = ({t}) => {
 							</Card.Text>
 
 						</Card.Body>
-						<Card.Img src={'Images/test4.png'} style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
+						<Card.Img src={'Images/foto8.jpg'} style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
 					</div>
 				</div>
 			</Card>
@@ -109,7 +109,7 @@ const Products = ({t}) => {
 							</Card.Text>
 
 						</Card.Body>
-						<Card.Img src={'Images/test4.png'} style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
+						<Card.Img src={'Images/Foto9.jpg'} style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
 					</div>
 				</div>
 			</Card>
