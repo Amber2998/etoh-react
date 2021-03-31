@@ -31,7 +31,7 @@ const Products = ({t}) => {
 							</Card.Text>
 						</Card.Body>
 
-						<Card.Img src={'Images/foto4.jpg'} style={{height:'14em', width: 'auto', objectFit: 'cover'}}/>
+						<Card.Img src={'Images/Foto4.jpg'} style={{height:'14em', width: 'auto', objectFit: 'cover'}}/>
 
 					</div>
 				</div>
@@ -84,7 +84,7 @@ const Products = ({t}) => {
 							</Card.Text>
 
 						</Card.Body>
-						<Card.Img src={'Images/foto8.jpg'} style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
+						<Card.Img src={'Images/Foto8.jpg'} style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
 					</div>
 				</div>
 			</Card>
