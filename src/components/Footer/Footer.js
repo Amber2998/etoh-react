@@ -9,6 +9,9 @@ const Footer = ({ t, cookieState, ...props }) => {
 				<a href="https://www.facebook.com/EtOHBeverages">
 					<img src="Images/facebook.png" height="50px" alt={'facebook'}/>
 				</a>
+        <a href="https://www.instagram.com/etoh.beverages/">
+					<img src="Images/instagram.png" height="50px" alt={'instagram'}/>
+				</a>
 				<a href="https://wa.me/32478239016">
 					<img src="Images/whatsapp.png" height="50px" alt={'whatsapp'}/>
 				</a>
