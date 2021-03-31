@@ -81,7 +81,7 @@ class App extends React.Component {
 									 alt={'en-translation'} style={{ width: '1em' }}/>
 							</div>
 						</div>
-						<Navbar/>
+						<Navbar />
 
 						<AgeModal
 							show={!this.state.oldEnough && !this.state.checkedAge}

@@ -21,7 +21,7 @@ class CustomNavBar extends React.Component {
 	render () {
 		let {location, t} = this.props;
 
-		return <Navbar expand="lg" collapseOnSelect={true} sticky="top" style={{backgroundColor: 'white', boxShadow: '0px 3px 5px 0px #ececec', margin: '0 0 1em 0'}} >
+		return <Navbar expand="lg" collapseOnSelect={true} sticky="top" style={{}} >
 			<Navbar.Brand href={"/"}>
 				<img src="Images/EtOH%20logo.png" alt="Logo" style={{ width: '100px' }}/>
 			</Navbar.Brand>
