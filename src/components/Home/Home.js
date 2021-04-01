@@ -7,20 +7,20 @@ import { Carousel, CarouselItem } from 'react-bootstrap';
 const Home = ({ t }) => {
 	return <div>
 		<div className="box">
-			<div className="fadingbox">
+			<div className="fadingbox" >
 
-					<Carousel>
-						<CarouselItem>
-							<img src="Images/banner5.png" alt="test" width="100%"/>
-						</CarouselItem>
-						<CarouselItem>
-							<img src="Images/test3.png" alt="test" width="100%"/>
+					<Carousel controls={false}>
+						<CarouselItem  >
+							<img src="Images/Foto7.jpg" alt="test" width="100%"/>
 						</CarouselItem>
 						<CarouselItem>
 							<img src="Images/Foto3.jpg" alt="test" width="100%"/>
 						</CarouselItem>
 						<CarouselItem>
-							<img src="Images/Foto7.jpg" alt="test" width="100%"/>
+							<img src="Images/DSC_0025.jpg" alt="test" width="100%"/>
+						</CarouselItem>
+						<CarouselItem>
+							<img src="Images/DSC_0695.jpg" alt="test" />
 						</CarouselItem>
 					</Carousel>
 
