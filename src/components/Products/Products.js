@@ -100,7 +100,7 @@ const Products = ({t}) => {
 											<img src="Images/yellowapple.png" alt="apple" height="24px"/>
 											{t('Miss Ginger')}
 										</div>
-										<i className={'sub-text'}>{t('Appel-Framboos')}</i>
+										<i className={'sub-text'}>{t('Appel-Gember')}</i>
 									</span>
 							</Card.Title>
 							<Card.Text>
