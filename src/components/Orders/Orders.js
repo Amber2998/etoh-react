@@ -13,9 +13,16 @@ const Orders = ({t, ...props}) => {
 				<p className={'apple-text'}><img src="Images/pinkapple.png" alt="apple" height="16px"/>	{t('Maak de betaling in orde.')}</p>
 				<p className={'apple-text'}><img src="Images/yellowapple.png" alt="apple" height="16px"/>{t('Wij sturen je een mail om de betaling de bevestigen en de details voor de verzending of ophaling van jouw bestelling.')}</p>
 			</div>
-			<div >
+
+<h2>{t('Binnenkort kan je hier bestellen')}</h2>
+	
+{/* 
+			<div>
 				<iframe title={'google-form-to-order'} src="https://docs.google.com/forms/d/e/1FAIpQLSelNyws3oJTpKF0n8Icz0UZ7GZBO2gEuU6v6a64xI1qWxCBdg/viewform?embedded=true" style={{display:"inline-block", width:"100%", height: "203em", border:"hidden"}}>Laden…</iframe>
 			</div>
+	
+*/} 
+
 			<div style={{display:"flex", justifyContent: "center"}}>
 				<img src="Images/alcoholverbod.jpg" alt={'banner-alcoholwet-10-dec-2009'}/>
 			</div>
