@@ -1,14 +1,12 @@
 import React from 'react';
 import { Form, Formik, Field } from 'formik'
 import axios from 'axios';
-import { Button, FormControl, InputGroup, Spinner, Form as BForm, Card, Alert } from 'react-bootstrap';
+import { Button, FormControl, InputGroup, Spinner, Form as BForm, Alert } from 'react-bootstrap';
 import * as Yup from 'yup';
 
 const config = {
 	cors: 'https://cors-anywhere.herokuapp.com/', // <optional> doesn't display the cors error
-	// formUrl: 'https://docs.google.com/forms/d/e/19DIkyyEclnAOMkg5xzQcyE-Zylrvg2ADB0uxietJE4M/formResponse'
 	formUrl: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSelNyws3oJTpKF0n8Icz0UZ7GZBO2gEuU6v6a64xI1qWxCBdg/formResponse'
-
 };
 
 const ControlledInput = ({field, form, value, label, onChange, prepend, append, ...props}) => {
@@ -125,22 +123,24 @@ class OrderForm extends React.Component {
 				{ (props) => {
 					return <Form className={'w-75'}>
 						<Field name={'emailAddress'} label={'E-mailadres'} component={ControlledInput}
+							   disabled={this.state.submitted}
 							   onChange={(value, field, form) => form.setFieldValue(field.name, value)}
 							   value={(field, form) => form.values[field.name]}
 						/>
 
-						<Field value={this.getFieldValue} label={'Voornaam'} name={'voorNaam'} component={ControlledInput} onChange={this.updateValue}/>
-						<Field value={this.getFieldValue} label={'Achternaam'} name={'achterNaam'} component={ControlledInput} onChange={this.updateValue}/>
-						<Field value={this.getFieldValue} label={'Straat'} name={'straat'} component={ControlledInput} onChange={this.updateValue}/>
-						<Field value={this.getFieldValue} label={'Huisnummer'} name={'huisNummer'} component={ControlledInput} onChange={this.updateValue}/>
-						<Field value={this.getFieldValue} label={'Postbus'} name={'postBus'} component={ControlledInput} onChange={this.updateValue}/>
-						<Field value={this.getFieldValue} label={'Postcode'} name={'postCode'} component={ControlledInput} onChange={this.updateValue}/>
-						<Field value={this.getFieldValue} label={'Plaats'} name={'plaats'} component={ControlledInput} onChange={this.updateValue}/>
+						<Field value={this.getFieldValue} disabled={this.state.submitted} label={'Voornaam'} name={'voorNaam'} component={ControlledInput} onChange={this.updateValue}/>
+						<Field value={this.getFieldValue} disabled={this.state.submitted} label={'Achternaam'} name={'achterNaam'} component={ControlledInput} onChange={this.updateValue}/>
+						<Field value={this.getFieldValue} disabled={this.state.submitted} label={'Straat'} name={'straat'} component={ControlledInput} onChange={this.updateValue}/>
+						<Field value={this.getFieldValue} disabled={this.state.submitted} label={'Huisnummer'} name={'huisNummer'} component={ControlledInput} onChange={this.updateValue}/>
+						<Field value={this.getFieldValue} disabled={this.state.submitted} label={'Postbus'} name={'postBus'} component={ControlledInput} onChange={this.updateValue}/>
+						<Field value={this.getFieldValue} disabled={this.state.submitted} label={'Postcode'} name={'postCode'} component={ControlledInput} onChange={this.updateValue}/>
+						<Field value={this.getFieldValue} disabled={this.state.submitted} label={'Plaats'} name={'plaats'} component={ControlledInput} onChange={this.updateValue}/>
 
 						<h3>Bestelling</h3>
 
 						<Field name={'ladyBarbaraCounter'} type={'number'} min={0}
 							   label={'Lady Barbara 500ml (17%) - € 14,95/stuk'}
+							   disabled={this.state.submitted}
 							   component={ControlledInput}
 							   prepend={'Aantal'}
 							   onChange={this.updateValue}
@@ -151,6 +151,7 @@ class OrderForm extends React.Component {
 						<Field name={'madamCherryCounter'} type={'number'} min={0}
 							   label={'Madam Cherry 500ml (17%) - € 14,95/stuk'}
 							   component={ControlledInput}
+							   disabled={this.state.submitted}
 							   prepend={'Aantal'}
 							   onChange={this.updateValue}
 							   value={this.getFieldValue}
@@ -160,6 +161,7 @@ class OrderForm extends React.Component {
 						<Field name={'duchessFranCounter'} type={'number'} min={0}
 							   label={'Duchess Fran 500ml (17%) - € 14,95/stuk'}
 							   component={ControlledInput}
+							   disabled={this.state.submitted}
 							   prepend={'Aantal'}
 							   onChange={this.updateValue}
 							   value={this.getFieldValue}
@@ -169,6 +171,7 @@ class OrderForm extends React.Component {
 						<Field name={'missGingerCounter'} type={'number'} min={0}
 							   label={'Miss Ginger 500ml (17%) - € 14,95/stuk'}
 							   component={ControlledInput}
+							   disabled={this.state.submitted}
 							   prepend={'Aantal'}
 							   onChange={this.updateValue}
 							   value={this.getFieldValue}
@@ -178,6 +181,7 @@ class OrderForm extends React.Component {
 						<Field name={'tasteBoxCounter'} type={'number'} min={0}
 							   label={'Taste Box - € 24,95'}
 							   component={ControlledInput}
+							   disabled={this.state.submitted}
 							   prepend={'Aantal'}
 							   onChange={this.updateValue}
 							   value={this.getFieldValue}
@@ -189,6 +193,7 @@ class OrderForm extends React.Component {
 						<Field name={'vragenOpmerking'} as={'textarea'}
 							   label={'Vragen/opmerkingen bij de bestelling'}
 							   component={ControlledInput}
+							   disabled={this.state.submitted}
 							   onChange={this.updateValue}
 							   value={this.getFieldValue}
 						/>
@@ -200,6 +205,7 @@ class OrderForm extends React.Component {
 									<BForm.Control as={"select"}
 										onChange={e => this.updateValue(e.target.value, field, form)}
 										onBlur={e => form.setTouched({...form.touched, [field.name]: true})}
+										disabled={this.state.submitted}
 									>
 										<option>Gratis ophalen - Free pick up in Glabbeek (bij Amber)</option>
 										<option>Gratis ophalen - Free pick up in Boortmeerbeek (bij Dylan)</option>
@@ -215,6 +221,7 @@ class OrderForm extends React.Component {
 							{({field, form}) =>{
 								return <div className={'d-flex'}>
 									<BForm.Switch id={"plusEighteenSwitch"}
+										disabled={this.state.submitted}
 										onChange={e => {
 											this.updateValue(e.target.checked ? 'Ja, ik ben ouder dan 18 jaar - Yes, I am over 18 years old': '', field, form)
 											form.setTouched({...form.touched, [field.name]: true})
