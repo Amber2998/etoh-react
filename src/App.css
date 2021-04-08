@@ -197,6 +197,7 @@ button:hover {
 .delete-cookie-button:hover {
     color: white;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .box .btn:hover {

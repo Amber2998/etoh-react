@@ -25,7 +25,7 @@ const Footer = ({ t, cookieState, ...props }) => {
 			{ checkedCookies
 			&& allowsCookies
 			&& oldEnough
-			&& <a onClick={cookieNoFn} className={'delete-cookie-button d-flex justify-content-center'}>Cookies verwijderen</a>}
+			&& <p onClick={cookieNoFn} className={'delete-cookie-button d-flex justify-content-center'}>Cookies verwijderen</p>}
 		</footer>
 	)
 }
