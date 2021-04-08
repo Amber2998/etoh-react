@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Formik, Field } from 'formik'
 import axios from 'axios';
-import { Button, FormControl, InputGroup } from 'react-bootstrap';
+import { Button, FormControl, InputGroup, Spinner, Form as BForm, Card, Alert } from 'react-bootstrap';
 import * as Yup from 'yup';
 
 const config = {
@@ -12,21 +12,13 @@ const config = {
 };
 
 const ControlledInput = ({field, form, value, label, onChange, prepend, append, ...props}) => {
+	let isInErrorState = !!form.errors[field.name] && form.touched[field.name];
+	let errorMessage = typeof form.errors[field.name] === 'object' ? form.errors[field.name].value : form.errors[field.name]
 	return (
 		<React.Fragment>
-			<div className={'d-flex justify-content-between'}>
-				<label>{label}</label>
-				{
-					!!form.errors[field.name]
-					&& form.touched[field.name]
-					&& <p className={'m-0'} style={{color: 'red', textDecoration: 'underline'}}>{
-						typeof form.errors[field.name] === 'object' ?
-							form.errors[field.name].value : form.errors[field.name]
-					}</p>
-				}
-			</div>
+			<BForm.Label>{label}</BForm.Label>
 
-			<InputGroup className={'mb-3'}>
+			<InputGroup className={'mb-3'} hasValidation>
 				{ !!prepend &&<InputGroup.Prepend>
 					<InputGroup.Text>{prepend}</InputGroup.Text>
 				</InputGroup.Prepend>}
@@ -34,11 +26,13 @@ const ControlledInput = ({field, form, value, label, onChange, prepend, append, 
 				<FormControl value={value(field, form)}
 							 onChange={e => onChange(e.target.value, field, form)}
 							 onBlur={e => form.setTouched({...form.touched, [field.name]: true})}
+							 isInvalid={isInErrorState}
 							 {...props}/>
 
 				{ !!append && <InputGroup.Append >
 					<InputGroup.Text>{append(field,form)}</InputGroup.Text>
 				</InputGroup.Append> }
+				<BForm.Control.Feedback type={'invalid'}>{errorMessage}</BForm.Control.Feedback>
 			</InputGroup>
 		</React.Fragment>
 	)
@@ -52,6 +46,12 @@ const ValidationSchema = Yup.object().shape({
 	huisNummer: Yup.object().shape({value: Yup.string().required('Verplicht!')}),
 	postCode: Yup.object().shape({value: Yup.string().required('Verplicht!')}),
 	plaats: Yup.object().shape({value: Yup.string().required('Verplicht!')}),
+	ladyBarbaraCounter: Yup.object().shape({value: Yup.number()}),
+	madamCherryCounter: Yup.object().shape({value: Yup.number()}),
+	duchessFranCounter: Yup.object().shape({value: Yup.number()}),
+	missGingerCounter: Yup.object().shape({value: Yup.number()}),
+	tasteBoxCounter: Yup.object().shape({value: Yup.number()}),
+
 });
 
 class OrderForm extends React.Component {
@@ -71,7 +71,12 @@ class OrderForm extends React.Component {
 		tasteBoxCounter: {id: 1420066394, value: 0},
 		vragenOpmerking: {id: 1750870435, value: ''},
 		verzending: {id: 50357737, value: ''},
-		eighteenPlus: {id: 69530754, value: true}
+		eighteenPlus: {id: 69530754, value: false}
+	}
+
+	state= {
+		submitted: false,
+		submissionState: 'failure'
 	}
 
 	submit = async(e) => {
@@ -91,9 +96,13 @@ class OrderForm extends React.Component {
 		})
 			.then(response => {
 				console.log('response', response);
+				this.setState({submitted: true})
+				this.setState({submissionState: 'success'})
 			})
 			.catch(err => {
 				console.log('err', err);
+				this.setState({submitted: true})
+				this.setState({submissionState: 'failure'})
 			})
 	}
 
@@ -184,9 +193,55 @@ class OrderForm extends React.Component {
 							   value={this.getFieldValue}
 						/>
 
-						{/* TODO: Ik ben 18+ */}
+						<Field name={'verzending'} >
+							{ ({field, form}) => {
+								return <BForm.Group>
+									<BForm.Label>Verzending</BForm.Label>
+									<BForm.Control as={"select"}
+										onChange={e => this.updateValue(e.target.value, field, form)}
+										onBlur={e => form.setTouched({...form.touched, [field.name]: true})}
+									>
+										<option>Gratis ophalen - Free pick up in Glabbeek (bij Amber)</option>
+										<option>Gratis ophalen - Free pick up in Boortmeerbeek (bij Dylan)</option>
+										<option>Gratis ophalen - Free pick up in Leuven (bij Elvira)</option>
+										<option>Gratis ophalen - Free pick up in Heusden-Zolder (bij Wout)</option>
+										<option>Verzending in België (+verzendkost) - Shipping in Belgium (+shipping cost)</option>
+									</BForm.Control>
+								</BForm.Group>
+							} }
+						</Field>
 
-							<Button disabled={props.isSubmitting} type={'submit'}>Bestel!</Button>
+						<Field name={'eighteenPlus'}>
+							{({field, form}) =>{
+								return <div className={'d-flex'}>
+									<BForm.Switch id={"plusEighteenSwitch"}
+										onChange={e => {
+											this.updateValue(e.target.checked ? 'Ja, ik ben ouder dan 18 jaar - Yes, I am over 18 years old': '', field, form)
+											form.setTouched({...form.touched, [field.name]: true})
+										}}
+									/>
+									Ja, ik ben ouder dan 18 jaar
+								</div>
+							}}
+						</Field>
+
+						{
+							!props.values.eighteenPlus.value
+							? <Alert className={'my-3'} variant={'danger'}>Je moet minstens 18 jaar oud zijn om te mogen bestellen.</Alert>
+							: <div className={'d-flex justify-content-end my-3'}>
+								{
+									props.isSubmitting
+										? <Spinner animation={'border'} variant={'secondary'}/>
+										: !this.state.submitted
+										? <Button disabled={props.isSubmitting} variant={'success'} type={'submit'}>Bestel!</Button>
+										: this.state.submissionState === 'success'
+											? <div style={{ color: 'green' }}>De bestelling is geplaatst!</div>
+											: <div style={{ color: 'danger' }}>Sorry, er ging iets mis met de bestelling..
+												Neem contact op met het team en zorgen we meteen voor een
+												oplossing!</div>
+								}
+							</div>
+						}
 					</Form>
 				}}
 			</Formik>
