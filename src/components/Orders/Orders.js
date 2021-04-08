@@ -26,9 +26,9 @@ class Orders extends React.Component {
 				</div>
 
 
-				<div>
-					<iframe title={'google-form-to-order'} src="https://docs.google.com/forms/d/e/1FAIpQLSelNyws3oJTpKF0n8Icz0UZ7GZBO2gEuU6v6a64xI1qWxCBdg/viewform?embedded=true" style={{display:"inline-block", width:"100%", height: "203em", border:"hidden"}}>Laden…</iframe>
-				</div>
+				{/*<div>*/}
+				{/*	<iframe title={'google-form-to-order'} src="https://docs.google.com/forms/d/e/1FAIpQLSelNyws3oJTpKF0n8Icz0UZ7GZBO2gEuU6v6a64xI1qWxCBdg/viewform?embedded=true" style={{display:"inline-block", width:"100%", height: "203em", border:"hidden"}}>Laden…</iframe>*/}
+				{/*</div>*/}
 
 				<div style={{display:"flex", justifyContent: "center"}}>
 					<img src="Images/alcoholverbod.jpg" alt={'banner-alcoholwet-10-dec-2009'}/>
