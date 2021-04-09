@@ -130,7 +130,6 @@ const Products = ({t}) => {
 								<ListGroup.Item className={'pl-0'}>1 x {t('Fles (500ml) naar keuze - gelieve dit door te geven bij bestelling')}</ListGroup.Item>
 								<ListGroup.Item className={'pl-0'}>2 x {t('Tonic')} (250ml) </ListGroup.Item>
 								<ListGroup.Item className={'pl-0'}>2 x {t('EtOH glas')} </ListGroup.Item>
-								<ListGroup.Item className={'pl-0'}>1 x {t('Geurkaars')} </ListGroup.Item>
 								<ListGroup.Item className={'pl-0'}>{t('verrassing')} </ListGroup.Item>
 
 							</ListGroup>

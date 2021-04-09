@@ -84,12 +84,12 @@ const Home = ({ t }) => {
 			<div className="d-flex justify-content-center">
 				<Link to={'/products'} className={'d-flex justify-content-center'}>
 					<div className={'d-flex flex-wrap justify-content-center'}>
+                        <img className={'ladyImage'} src="Images/Rabarber.png" alt={'rabarber'}/>
 						<img className={'ladyImage'} src="Images/Madam%20Cherry.png" alt={'madam-cherry'}/>
-						<img className={'ladyImage'} src="Images/Rabarber.png" alt={'rabarber'}/>
 					</div>
 					<div className={'d-flex flex-wrap justify-content-center'}>
+                        <img className={'ladyImage'} src="Images/Fran.png" alt={'duchess-fran'}/>
 						<img className={'ladyImage'} src="Images/MissGinger.png" alt={'miss-ginger'}/>
-						<img className={'ladyImage'} src="Images/Fran.png" alt={'duchess-fran'}/>
 					</div>
 				</Link>
 			</div>
