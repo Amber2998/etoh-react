@@ -43,7 +43,7 @@ const Home = ({ t }) => {
 								<span className={'apple-text'}
 									  style={{ color: '#E6007E', fontWeight: 'bolder', fontSize: '32px' }}>
                                                 <img src="Images/pinkapple.png" alt="apple" height="32px"/>
-									{t('EtOH, belgian flavors in a bottle')}</span>
+									{t('EtOH, belgian Flavors in a bottle')}</span>
 						</div>
 						<div className="card-text ">
 							<p>{t('Wij, bij EtOH, hechten belang aan lokale teelt. Wij maken gebruik van pure ingrediënten uit ons prachtige Hageland en verwerken deze in onze heerlijke drankjes.')} </p>
