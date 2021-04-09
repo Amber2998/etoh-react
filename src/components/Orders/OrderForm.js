@@ -187,7 +187,7 @@ class OrderForm extends React.Component {
 							   value={this.getFieldValue}
 							   append={(field, formik) => this.countPrice(field, formik, 24.95)}
 						/>
-						<label className={'text-muted'}>Vergeet niet om bij opmerkingen aan te geven welke smaak u verkiest, keuze uit: Madam Cherry, Lady Barbara, Miss Ginger, Empress Fran</label>
+						<label className={'text-muted'}>Vergeet niet om bij opmerkingen aan te geven welke smaak u verkiest, keuze uit: Lady Barbara, Madam Cherry, Duchess Fran, Miss Ginger</label>
 
 						{/* TODO: textArea */}
 						<Field name={'vragenOpmerking'} as={'textarea'}
@@ -244,7 +244,7 @@ class OrderForm extends React.Component {
 										: this.state.submissionState === 'success'
 											? <div style={{ color: 'green' }}>De bestelling is geplaatst!</div>
 											: <div style={{ color: 'danger' }}>Sorry, er ging iets mis met de bestelling..
-												Neem contact op met het team en zorgen we meteen voor een
+												Neem contact op met het team en we zorgen meteen voor een
 												oplossing!</div>
 								}
 							</div>
