@@ -173,11 +173,10 @@ class OrderForm extends React.Component {
 								{
 									props.isSubmitting
 										? <Spinner animation={'border'} variant={'secondary'}/>
-										: !this.state.submitted
-										? <Button disabled={props.isSubmitting} variant={'success'} type={'submit'}>{t('Bestel!')}</Button>
-										: this.state.submissionState === 'success'
-											? <div style={{ color: 'green' }}>{t('De bestelling is geplaatst!')}</div>
-											: <div style={{ color: 'danger' }}>{t('Sorry, er ging iets mis met de bestelling.. Neem contact op met het team en we zorgen meteen voor een oplossing!')}</div>
+										: <div className={'d-flex'}>
+											{this.state.submitted && <div style={{ color: 'green' }}>{t('De bestelling is geplaatst!')}</div>}
+											<Button disabled={props.isSubmitting || this.state.submitted} variant={'success'} type={'submit'}>{t('Bestel!')}</Button>
+										</div>
 								}
 							</div>
 						}
