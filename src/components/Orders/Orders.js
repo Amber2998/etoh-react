@@ -1,6 +1,6 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
-import OrderForm from './OrderForm';
+import OrderForm from './OrderForm/OrderForm';
 
 class Orders extends React.Component {
 

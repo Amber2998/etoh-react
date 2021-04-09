@@ -9,6 +9,8 @@ import ordersNL from './locales/nl/orders.json';
 import contactNL from './locales/nl/contact.json';
 import footerNL from './locales/nl/footer.json';
 import navbarNL from './locales/nl/navbar.json';
+import orderFormNL from './locales/nl/orderform.json';
+import errorMessagesNL from './locales/nl/errorMessages.json';
 
 import homeEN from './locales/en/home.json';
 import aboutEN from './locales/en/about.json';
@@ -17,6 +19,8 @@ import ordersEN from './locales/en/orders.json';
 import contactEN from './locales/en/contact.json';
 import footerEN from './locales/en/footer.json';
 import navbarEN from './locales/en/navbar.json';
+import orderFormEN from './locales/en/orderform.json';
+import errorMessagesEN from './locales/en/errorMessages.json';
 
 // the translations
 const resources = {
@@ -27,8 +31,9 @@ const resources = {
 		orders: ordersNL,
 		contact: contactNL,
 		footer: footerNL,
-		navbar: navbarNL
-
+		navbar: navbarNL,
+		orderform: orderFormNL,
+		errormessages: errorMessagesNL
 	},
 	en: {
 		home: homeEN,
@@ -37,7 +42,9 @@ const resources = {
 		orders: ordersEN,
 		contact: contactEN,
 		footer: footerEN,
-		navbar: navbarEN
+		navbar: navbarEN,
+		orderform: orderFormEN,
+		errormessages: errorMessagesEN
 	}
 };
 
