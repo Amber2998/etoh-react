@@ -18,8 +18,6 @@ class Orders extends React.Component {
 					<p className={'apple-text'}><img src="Images/yellowapple.png" alt="apple" height="16px"/>{t('Wij sturen je een mail om de betaling de bevestigen en de details voor de verzending of ophaling van jouw bestelling.')}</p>
 				</div>
 
-				<h2>{t('Binnenkort kan je hier bestellen')}</h2>
-
 				<h3>Bestelformulier</h3>
 				<div className={'d-flex justify-content-center'}>
 					<OrderForm />
