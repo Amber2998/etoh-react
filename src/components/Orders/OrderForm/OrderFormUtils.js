@@ -23,8 +23,8 @@ export const initialValues = {
 	missGingerCounter: {id: 1580922975, value: 0},
 	tasteBoxCounter: {id: 1420066394, value: 0},
 	vragenOpmerking: {id: 1750870435, value: ''},
-	verzending: {id: 50357737, value: ''},
-	eighteenPlus: {id: 69530754, value: false}
+	verzending: {id: 50357737, value: 'Gratis ophalen - Free pick up in Glabbeek (bij Amber)'},
+	eighteenPlus: {id: 69530754, value: false},
 }
 
 export const ValidationSchema = Yup.object().shape({

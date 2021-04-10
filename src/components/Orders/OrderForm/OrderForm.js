@@ -4,6 +4,8 @@ import axios from 'axios';
 import { Button, Spinner, Form as BForm, Alert } from 'react-bootstrap';
 import { withNamespaces } from 'react-i18next';
 import { config, ControlledInput, initialValues, ValidationSchema } from './OrderFormUtils';
+import SelectField from './SelectField';
+import SuccessAlert from './ConfirmationButton';
 
 
 class OrderForm extends React.Component {
@@ -49,6 +51,8 @@ class OrderForm extends React.Component {
 	getFieldValue = (field, formik) => formik.values[field.name].value;
 
 	countPrice = (field, formik, price) => (parseInt (formik.values[field.name].value) * price).toLocaleString('nl-BE', {style: 'currency', currency: 'EUR'});
+
+	touchField = (field, form) => form.setTouched({...form.touched, [field.name]: true});
 
 	render () {
 		let {t} = this.props
@@ -151,20 +155,17 @@ class OrderForm extends React.Component {
 							} }
 						</Field>
 
-						<Field name={'eighteenPlus'}>
-							{({field, form}) =>{
-								return <div className={'d-flex'}>
-									<BForm.Switch id={"plusEighteenSwitch"}
-										disabled={this.state.submitted}
-										onChange={e => {
-											this.updateValue(e.target.checked ? 'Ja, ik ben ouder dan 18 jaar - Yes, I am over 18 years old': '', field, form)
-											form.setTouched({...form.touched, [field.name]: true})
-										}}
-									/>
-									{t('Ja, ik ben ouder dan 18 jaar')}
-								</div>
+						<Field
+							name={'eighteenPlus'}
+							component={SelectField}
+							id={"plusEighteenSwitch"}
+							disabled={this.state.submitted}
+							onChange={(e, field, form) => {
+								this.updateValue(e.target.checked ? 'Ja, ik ben ouder dan 18 jaar - Yes, I am over 18 years old': '', field, form);
+								this.touchField(field, form)
 							}}
-						</Field>
+							label={t('Ja, ik ben ouder dan 18 jaar')}
+						/>
 
 						{
 							!props.values.eighteenPlus.value
@@ -173,10 +174,17 @@ class OrderForm extends React.Component {
 								{
 									props.isSubmitting
 										? <Spinner animation={'border'} variant={'secondary'}/>
-										: <div className={'d-flex'}>
-											{this.state.submitted && <div style={{ color: 'green' }}>{t('De bestelling is geplaatst!')}</div>}
-											<Button disabled={props.isSubmitting || this.state.submitted} variant={'success'} type={'submit'}>{t('Bestel!')}</Button>
-										</div>
+										: this.state.submitted
+											? <SuccessAlert
+												variant={'success'}
+												heading={t("De bestelling is geplaatst!")}
+												text={t("Wij nemen je bestelling zo snel mogelijk in behandeling")}
+												style={{width: '100%'}}
+											/>
+											: <Button
+												disabled={props.isSubmitting || this.state.submitted}
+												variant={'success'}
+												type={'submit'}> {t('Bestel!')} </Button>
 								}
 							</div>
 						}
