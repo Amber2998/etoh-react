@@ -1,6 +1,8 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
 import { Card, ListGroup } from 'react-bootstrap';
+import { MoederdagSpecial } from './MoederdagSpecial';
+import ProductKaart from './ProductKaart';
 
 const Products = ({t}) => {
 	return (
@@ -9,110 +11,51 @@ const Products = ({t}) => {
 			<p>{t('Onze producten komen in hersluitbare glazen flessen van 500ml en bevatten een alcoholpercentage van 17%.')}</p>
 			<p>{t('yesyesyes tien windjes in een fles')}</p>
 
-			<Card className={'my-2'}>
-				<div className={'d-flex flex-column flex-md-row'}>
-					<Card.Img className={'container-fluid'} src={'Images/Rabarber.png'} style={{height:'14em', width: 'auto', objectFit: 'cover'}}/>
+			<MoederdagSpecial/>
 
-					<div className={'d-flex'}>
-						<Card.Body>
-							<Card.Title className={'d-flex flex-row-reverse'}>
-								<span className='d-flex flex-column' style={{color: "#0D9816", fontWeight: "bolder", fontSize: "24px"}}>
-									<div className={'apple-text'}>
-										<img src="Images/greenapple.png" alt="apple" height="24px"/>
-										{t('Lady Barbara')}
-									</div>
-									<i className={'sub-text'}>{t('Appel-Rabarber')}</i>
-								</span>
-							</Card.Title>
+			<ProductKaart
+				leftImage={'Images/Rabarber.png'}
+				appleImage={'Images/greenapple.png'}
+				title={t('Lady Barbara')}
+				titleColor={'#0D9816'}
+				subtitle={t('Appel-Rabarber')}
+				text={t('Lady Barbara brengt een unieke smaak door haar mix van rabarber en appel. Zo proef jij haar elegante karakter.')}
+				rightImage={'Images/Foto4.jpg'}
+				prijs={t('Prijs') + `: €14,95`}
+				/>
 
-							<Card.Text>
-								<p>{t('Lady Barbara brengt een unieke smaak door haar mix van rabarber en appel. Zo proef jij haar elegante karakter.')}</p>
-								<h4 style={{fontSize: '14px'}}>{t('Prijs')}: &euro;14,95</h4>
-							</Card.Text>
-						</Card.Body>
+			<ProductKaart
+				leftImage={'Images/Madam Cherry.png'}
+				appleImage={'Images/redapple.png'}
+				title={t('Madam Cherry')}
+				titleColor={'#C90404'}
+				subtitle={t('Appel-Kers')}
+				text={t('Maak kennis met Madam Cherry: zij brengt de zoete liefde van appel en kers tot bij jou. Met haar sterk karakter verovert zij jouw hart.')}
+				rightImage={'Images/Foto2.jpg'}
+				prijs={t('Prijs') + `: €14,95`}
+				/>
 
-						<Card.Img src={'Images/Foto4.jpg'} style={{height:'14em', width: 'auto', objectFit: 'cover'}}/>
+			<ProductKaart
+				leftImage={'Images/Fran.png'}
+				appleImage={'Images/pinkapple.png'}
+				title={t('Duchess Fran')}
+				titleColor={'#E6007E'}
+				subtitle={t('Appel-Framboos')}
+				text={t('Duchess Fran, deze chique dame neemt jou mee op een smaakvolle audiëntie. Een koninklijke combinatie van framboos en appel.')}
+				rightImage={'Images/Foto8.jpg'}
+				prijs={t('Prijs') + `: €14,95`}
+			/>
 
-					</div>
-				</div>
-			</Card>
-
-			<Card className={'my-2'}>
-				<div className={'d-flex flex-column flex-md-row'}>
-					<Card.Img className={'container-fluid'} src={'Images/Madam Cherry.png'} style={{height: '14em', width: 'auto', objectFit: 'cover'}}/>
-
-					<div className={'d-flex'}>
-						<Card.Body>
-							<Card.Title className={'d-flex flex-row-reverse'}>
-								<span className='d-flex flex-column' style={{color: "#C90404", fontWeight: "bolder", fontSize: "24px"}}>
-									<div className={'apple-text'}>
-										<img src="Images/redapple.png" alt="apple" height="24px"/>
-										{t('Madam Cherry')}
-									</div>
-									<i className={'sub-text'}>{t('Appel-Kers')}</i>
-								</span>
-							</Card.Title>
-
-							<Card.Text>
-								<p>{t('Maak kennis met Madam Cherry: zij brengt de zoete liefde van appel en kers tot bij jou. Met haar sterk karakter verovert zij jouw hart.')}</p>
-								<h4 style={{fontSize: '14px'}}>{t('Prijs')}: &euro;14,95</h4>
-							</Card.Text>
-						</Card.Body>
-						<Card.Img src={'Images/Foto2.jpg'} style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
-					</div>
-				</div>
-			</Card>
-
-			<Card className={'my-2'}>
-				<div className={'d-flex flex-column flex-md-row'}>
-					<Card.Img className={'container-fluid'} src={'Images/Fran.png'} style={{height: '14em', width: 'auto', objectFit: 'cover'}}/>
-
-					<div className={'d-flex'}>
-						<Card.Body>
-							<Card.Title className={'d-flex flex-row-reverse'}>
-								<span className='d-flex flex-column' style={{color: "#E6007E", fontWeight: "bolder", fontSize: "24px"}}>
-									<div className={'apple-text'}>
-										<img src="Images/pinkapple.png" alt="apple" height="24px"/>
-										{t('Duchess Fran')}
-									</div>
-									<i className={'sub-text'}>{t('Appel-Framboos')}</i>
-								</span>
-							</Card.Title>
-							<Card.Text>
-								<p>{t('Duchess Fran, deze chique dame neemt jou mee op een smaakvolle audiëntie. Een koninklijke combinatie van framboos en appel.')}</p>
-								<h4 style={{fontSize: '14px'}}>{t('Prijs')}: &euro;14,95</h4>
-							</Card.Text>
-
-						</Card.Body>
-						<Card.Img src={'Images/Foto8.jpg'} style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
-					</div>
-				</div>
-			</Card>
-
-			<Card className={'my-2'}>
-				<div className={'d-flex flex-column flex-md-row'}>
-					<Card.Img className={'container-fluid'} src="Images/MissGinger.png" style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
-					<div className={'d-flex'}>
-						<Card.Body>
-							<Card.Title className={'d-flex flex-row-reverse'}>
-									<span className='d-flex flex-column' style={{color: "#ECC814", fontWeight: "bolder", fontSize: "24px"}}>
-										<div className={'apple-text'}>
-											<img src="Images/yellowapple.png" alt="apple" height="24px"/>
-											{t('Miss Ginger')}
-										</div>
-										<i className={'sub-text'}>{t('Appel-Gember')}</i>
-									</span>
-							</Card.Title>
-							<Card.Text>
-								<p>{t('Deze knappe dame is Miss Ginger. Zij overtuigt jou met haar verfrissende mix van appel, gember en een subtiele citrustoets.')}</p>
-								<h4 style={{fontSize: '14px'}}>{t('Prijs')}: &euro;14,95</h4>
-							</Card.Text>
-
-						</Card.Body>
-						<Card.Img src={'Images/Foto9.jpg'} style={{height: "14em", width: 'auto', objectFit: "cover"}}/>
-					</div>
-				</div>
-			</Card>
+			<ProductKaart
+				leftImage={'Images/MissGinger.png'}
+				appleImage={'Images/yellowapple.png'}
+				title={t('Miss Ginger')}
+				titleColor={'#ECC814'}
+				subtitle={t('Appel-Gember')}
+				text={t('Deze knappe dame is Miss Ginger. Zij overtuigt jou met haar verfrissende mix van appel, gember en een subtiele citrustoets.')}
+				rightImage={'Images/Foto9.jpg'}
+				prijs={t('Prijs') + `: €14,95`}
+			/>
 
 			<Card className={'my-2'}>
 				<div className={'d-flex flex-column flex-md-row align-items-center'}>
