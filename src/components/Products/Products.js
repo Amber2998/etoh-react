@@ -58,11 +58,11 @@ const Products = ({t}) => {
 			/>
 
 			<BoxKaart
-				leftImage={'Images/test4.png'}
+				leftImage={'Images/tastebox.jpeg'}
 				title={t('Taste Box')}
 				text={t('Met deze box, kan je heerlijke cocktails maken met onze dranken. Deze box bevat:')}
 				listItems={[
-					'1 x ' + t('Fles (500ml) naar keuze - gelieve dit door te geven bij bestelling'),
+					'1 x ' + t('Fles (500ml) naar keuze'),
 					'2 x ' + t('Tonic')+ ' (250ml)',
 					'2 x ' + t('EtOH glas'),
 					t('verrassing')
