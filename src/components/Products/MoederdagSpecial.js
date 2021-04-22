@@ -19,9 +19,9 @@ export class MoederdagSpecial extends React.Component {
 					'1 x ' + t('Fles (500ml) naar keuze'),
 					'1 x ' + t('EtOH glas gegraveerd'),
 					'2 x ' + t('Belgische tonic'),
-					t('Granola by Nicely'),
-					t('Chocolade by Balerdon'),
-					t('Mama Thee by Simon Lévelt'),
+					<a href={'http://google.com'} style={{color:'var(--danger)'}}>{t('Granola by Nicely')}</a>,
+					<a href={'http://google.com'} style={{color:'var(--danger)'}}>{t('Chocolade by Balerdon')}</a>,
+					<a href={'http://google.com'} style={{color:'var(--danger)'}}>{t('Mama Thee by Simon Lévelt')}</a>,
 				]}
 				prijs={t('Prijs') + ' €24,95'}
 			/>
