@@ -7,7 +7,7 @@ export default class ProductKaart extends React.Component {
 		let {leftImage, appleImage, title, subtitle, text, rightImage, titleColor, prijs} = this.props;
 		return <Card className={'my-2'}>
 				<div className={'d-flex flex-column flex-md-row'}>
-					<Card.Img className={'container-fluid'} src={leftImage} style={{height:'14em', width: 'auto', objectFit: 'cover'}}/>
+					<Card.Img className={'container-fluid'} src={leftImage} style={{height:'14em', width: 'auto', objectFit: 'cover', padding: 0}}/>
 
 					<div className={'d-flex'}>
 						<Card.Body>
@@ -27,7 +27,9 @@ export default class ProductKaart extends React.Component {
 							</Card.Text>
 						</Card.Body>
 
-						<Card.Img src={rightImage} style={{height:'14em', width: 'auto', objectFit: 'cover'}}/>
+						{
+							!!rightImage && <Card.Img src={rightImage} style={{height:'14em', width: 'auto', objectFit: 'cover'}}/>
+						}
 
 					</div>
 				</div>
