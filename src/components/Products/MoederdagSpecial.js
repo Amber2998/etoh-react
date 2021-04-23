@@ -1,6 +1,5 @@
 import React from 'react';
 import { Alert } from 'react-bootstrap';
-import ProductKaart from './ProductKaart';
 import { withNamespaces } from 'react-i18next';
 import BoxKaart from './BoxKaart';
 

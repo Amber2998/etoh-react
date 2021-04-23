@@ -22,6 +22,7 @@ export const initialValues = {
 	duchessFranCounter: {id: 1009742711, value: 0},
 	missGingerCounter: {id: 1580922975, value: 0},
 	tasteBoxCounter: {id: 1420066394, value: 0},
+	moederdagBoxCounter: {id: 1472221396, value: 0},
 	vragenOpmerking: {id: 1750870435, value: ''},
 	verzending: {id: 50357737, value: 'Gratis ophalen - Free pick up in Glabbeek (bij Amber)'},
 	eighteenPlus: {id: 69530754, value: false},
@@ -40,6 +41,7 @@ export const ValidationSchema = Yup.object().shape({
 	duchessFranCounter: Yup.object().shape({value: Yup.number()}),
 	missGingerCounter: Yup.object().shape({value: Yup.number()}),
 	tasteBoxCounter: Yup.object().shape({value: Yup.number()}),
+	moederdagBoxCounter: Yup.object().shape({value: Yup.number()}),
 });
 
 const DryControlledInput = ({field, form, value, label, onChange, prepend, append, t, ...props}) => {
