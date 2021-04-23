@@ -19,11 +19,11 @@ export class MoederdagSpecial extends React.Component {
 					'1 x ' + t('Fles (500ml) naar keuze'),
 					'1 x ' + t('EtOH glas gegraveerd'),
 					'2 x ' + t('Belgische tonic'),
-					<a href={'http://google.com'} style={{color:'var(--danger)'}}>{t('Granola by Nicely')}</a>,
-					<a href={'http://google.com'} style={{color:'var(--danger)'}}>{t('Chocolade by Balerdon')}</a>,
-					<a href={'http://google.com'} style={{color:'var(--danger)'}}>{t('Mama Thee by Simon Lévelt')}</a>,
+					<a href={'https://www.nicely.be/'} style={{color:'var(--danger)'}}>{t('Granola by Nicely')}</a>,
+					<a href={'https://balerdon.be/'} style={{color:'var(--danger)'}}>{t('Chocolade by Balerdon')}</a>,
+					<a href={'http://simonleveltleuven.be'} style={{color:'var(--danger)'}}>{t('Mama Thee by Simon Lévelt')}</a>,
 				]}
-				prijs={t('Prijs') + ' €24,95'}
+				prijs={t('Prijs') + ' € 34,95'}
 			/>
 		</Alert>
 	}
