@@ -21,7 +21,7 @@ const Products = ({t}) => {
 				subtitle={t('Appel-Rabarber')}
 				text={t('Lady Barbara brengt een unieke smaak door haar mix van rabarber en appel. Zo proef jij haar elegante karakter.')}
 				rightImage={'Images/Foto4.jpg'}
-				prijs={t('Prijs') + `: € 17,95`}
+				prijs={t('Prijs') + `: € 16,95`}
 				/>
 
 			<ProductKaart
@@ -32,7 +32,7 @@ const Products = ({t}) => {
 				subtitle={t('Appel-Kers')}
 				text={t('Maak kennis met Madam Cherry: zij brengt de zoete liefde van appel en kers tot bij jou. Met haar sterk karakter verovert zij jouw hart.')}
 				rightImage={'Images/Foto2.jpg'}
-				prijs={t('Prijs') + `: € 17,95`}
+				prijs={t('Prijs') + `: € 16,95`}
 				/>
 
 			<ProductKaart
@@ -43,7 +43,7 @@ const Products = ({t}) => {
 				subtitle={t('Appel-Framboos')}
 				text={t('Duchess Fran, deze chique dame neemt jou mee op een smaakvolle audiëntie. Een koninklijke combinatie van framboos en appel.')}
 				rightImage={'Images/Foto8.jpg'}
-				prijs={t('Prijs') + `: € 17,95`}
+				prijs={t('Prijs') + `: € 16,95`}
 			/>
 
 			<ProductKaart
@@ -54,7 +54,7 @@ const Products = ({t}) => {
 				subtitle={t('Appel-Gember')}
 				text={t('Deze knappe dame is Miss Ginger. Zij overtuigt jou met haar verfrissende mix van appel, gember en een subtiele citrustoets.')}
 				rightImage={'Images/Foto9.jpg'}
-				prijs={t('Prijs') + `: € 17,95`}
+				prijs={t('Prijs') + `: € 16,95`}
 			/>
 
 			<BoxKaart

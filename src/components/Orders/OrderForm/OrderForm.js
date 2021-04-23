@@ -77,43 +77,43 @@ class OrderForm extends React.Component {
 						<h3>Bestelling</h3>
 
 						<Field name={'ladyBarbaraCounter'} type={'number'} min={0}
-							   label={t('Lady Barbara 500ml (17%) - € 17,95/stuk')}
+							   label={t('Lady Barbara 500ml (17%) - € 16,95/stuk')}
 							   disabled={this.state.submitted}
 							   component={ControlledInput}
 							   prepend={t('Aantal')}
 							   onChange={this.updateValue}
 							   value={this.getFieldValue}
-							   append={(field, formik) => this.countPrice(field, formik, 17.95)}
+							   append={(field, formik) => this.countPrice(field, formik, 16.95)}
 						/>
 
 						<Field name={'madamCherryCounter'} type={'number'} min={0}
-							   label={t('Madam Cherry 500ml (17%) - € 17,95/stuk')}
+							   label={t('Madam Cherry 500ml (17%) - € 16,95/stuk')}
 							   component={ControlledInput}
 							   disabled={this.state.submitted}
 							   prepend={t('Aantal')}
 							   onChange={this.updateValue}
 							   value={this.getFieldValue}
-							   append={(field, formik) => this.countPrice(field, formik, 17.95)}
+							   append={(field, formik) => this.countPrice(field, formik, 16.95)}
 						/>
 
 						<Field name={'duchessFranCounter'} type={'number'} min={0}
-							   label={t('Duchess Fran 500ml (17%) - € 17,95/stuk')}
+							   label={t('Duchess Fran 500ml (17%) - € 16,95/stuk')}
 							   component={ControlledInput}
 							   disabled={this.state.submitted}
 							   prepend={t('Aantal')}
 							   onChange={this.updateValue}
 							   value={this.getFieldValue}
-							   append={(field, formik) => this.countPrice(field, formik, 17.95)}
+							   append={(field, formik) => this.countPrice(field, formik, 16.95)}
 						/>
 
 						<Field name={'missGingerCounter'} type={'number'} min={0}
-							   label={t('Miss Ginger 500ml (17%) - € 17,95/stuk')}
+							   label={t('Miss Ginger 500ml (17%) - € 16,95/stuk')}
 							   component={ControlledInput}
 							   disabled={this.state.submitted}
 							   prepend={t('Aantal')}
 							   onChange={this.updateValue}
 							   value={this.getFieldValue}
-							   append={(field, formik) => this.countPrice(field, formik, 17.95)}
+							   append={(field, formik) => this.countPrice(field, formik, 16.95)}
 						/>
 
 						<Field name={'tasteBoxCounter'} type={'number'} min={0}
