@@ -9,7 +9,7 @@ const Home = ({ t }) => {
 		<div className="box">
 			<div className="fadingbox" >
 
-					<Carousel controls={false}>
+					<Carousel controls={true}>
 						<CarouselItem  >
 							<img src="Images/Foto7.jpg" alt="test" width="100%"/>
 						</CarouselItem>
@@ -21,6 +21,9 @@ const Home = ({ t }) => {
 						</CarouselItem>
 						<CarouselItem>
 							<img src="Images/DSC_0695.jpg" alt="test" />
+						</CarouselItem>
+    <CarouselItem>
+							<img src="Images/Team.jpg" alt="test" />
 						</CarouselItem>
 					</Carousel>
 
