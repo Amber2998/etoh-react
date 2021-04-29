@@ -32,6 +32,7 @@ class CustomNavBar extends React.Component {
 					<CustomNavLink to={"/about"} label={t('About')}/>
 					<CustomNavLink to={"/products"} label={t('Products')}/>
 					<CustomNavLink to={"/orders"} label={t('Orders')}/>
+                    <CustomNavLink to={"/recepten"} label={t('Recepten')}/>                                   
 					<CustomNavLink to={"/contact"} label={t('Contact')}/>
 				</Nav>
 			</Navbar.Collapse>

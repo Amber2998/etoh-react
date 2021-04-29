@@ -102,6 +102,23 @@ const Home = ({ t }) => {
 			<div className="d-flex justify-content-center">
 				<h3 className={'apple-text'}>
 					<img src="Images/greenapple.png" alt="apple" height="24px"/>
+					{t('Onze verkooppunten')}</h3>
+			</div>
+			<div className="d-flex flex-wrap">
+				<img src="Images/vierslag.png" height="100px" alt={'vierslag'}/>
+ <div className="card-text ">
+							<p> {t('Bistro De Vierslag')} </p>
+							<p> {t('Dorpstraat 15')}</p>
+                            <p> {t('3440 Halle-Booienhoven')}</p>
+						</div>        
+			</div>
+		</div>
+<br/>
+		<div>
+			<br/>
+			<div className="d-flex justify-content-center">
+				<h3 className={'apple-text'}>
+					<img src="Images/greenapple.png" alt="apple" height="24px"/>
 					{t('Onze partners')}</h3>
 			</div>
 			<div className="d-flex flex-wrap justify-content-between">

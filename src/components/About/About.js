@@ -10,7 +10,7 @@ const About = ({ t, ...props }) => {
 				<div className="d-flex flex-column flex-sm-row align-items-center align-items-sm-stretch justify-content-lg-end justify-content-between col-lg-6 m-lg-0 m-1 " style={{padding: '0'}}>
 					<div className="mr-sm-4">
 						<h2 className={'apple-text'}> <img src="Images/redapple.png" alt="apple" height="24px"/>  Wout</h2>
-						<p className={'text-sm-right text-center'}>Roadie</p>
+						<p className={'text-sm-right text-center'}>Roadie </p>
 					</div>
 					<img src="Images/WoutReekmans.jpg" alt="Wout Reekmans" width="300px" height="300px"/>
 				</div>
