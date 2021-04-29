@@ -33,7 +33,6 @@ const Home = ({ t }) => {
 			</div>
 		</div>
 
-
 		<div className="card" style={{ margin: '1em 0' }}>
 			<div className="row">
 				<div className="col-md-4">
@@ -43,17 +42,16 @@ const Home = ({ t }) => {
 				<div className="col-md-8">
 					<div className="card-body">
 						<div className="card-title d-flex flex-row-reverse">
-								<span className={'apple-text'}
-									  style={{ color: '#E6007E', fontWeight: 'bolder', fontSize: '32px' }}>
-                                                <img src="Images/pinkapple.png" alt="apple" height="32px"/>
-									{t('EtOH, belgian Flavors in a bottle')}</span>
+								<span className={'apple-text'} style={{ color: '#E6007E', fontWeight: 'bolder', fontSize: '32px' }}>
+									<img src="Images/pinkapple.png" alt="apple" height="32px"/>
+									{t('EtOH, belgian Flavors in a bottle')}
+								</span>
 						</div>
 						<div className="card-text ">
 							<p>{t('Wij, bij EtOH, hechten belang aan lokale teelt. Wij maken gebruik van pure ingrediënten uit ons prachtige Hageland en verwerken deze in onze heerlijke drankjes.')} </p>
 							<p> {t('Wij zijn een team van 4 studenten, elk met een andere opleiding. Maar hoe verschillend wij ook mogen zijn, we hebben ontdekt dat we allemaal hier ons hart hebben liggen.')}</p>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -106,14 +104,14 @@ const Home = ({ t }) => {
 			</div>
 			<div className="d-flex flex-wrap">
 				<img src="Images/vierslag.png" height="100px" alt={'vierslag'}/>
- <div className="card-text ">
-							<p> {t('Bistro De Vierslag')} </p>
-							<p> {t('Dorpstraat 15')}</p>
-                            <p> {t('3440 Halle-Booienhoven')}</p>
-						</div>        
+				<div className="card-text ">
+					<p> {t('Bistro De Vierslag')} </p>
+					<p> {t('Dorpstraat 15')}</p>
+					<p> {t('3440 Halle-Booienhoven')}</p>
+				</div>
 			</div>
 		</div>
-<br/>
+		<br/>
 		<div>
 			<br/>
 			<div className="d-flex justify-content-center">

@@ -14,9 +14,8 @@ class Contact extends React.Component {
 								<div className="card-text ">
 									<p> Team EtOH<br/>
 										etohbeverages@gmail.com<br/>
-										0478/23.90.16<br/>
-										Dries 12 <br/>
-										3380 Glabbeek
+										Geheime locatie <br/>
+										Ergens in Vlaams-Brabant
 									</p>
                         <img src="Images/greenapple.png" alt="apple" height="24px"/>
             <img src="Images/redapple.png" alt="apple" height="24px"/>

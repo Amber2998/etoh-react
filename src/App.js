@@ -7,6 +7,7 @@ import Orders from './components/Orders/Orders';
 import Products from './components/Products/Products';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
+import Recepten from './components/Recepten/Recepten';
 import i18n from './i18n';
 import React from 'react';
 import AgeDenial from './components/AgeDenial/AgeDenial';
@@ -91,18 +92,11 @@ class App extends React.Component {
 
 						{this.state.oldEnough ? <div className={"content"}>
 								<Switch>
-									<Route path="/about">
-										<About/>
-									</Route>
-									<Route path="/products">
-										<Products/>
-									</Route>
-									<Route path="/orders">
-										<Orders/>
-									</Route>
-									<Route path="/contact">
-										<Contact/>
-									</Route>
+									<Route path="/about"> <About/> </Route>
+									<Route path="/products"> <Products/> </Route>
+									<Route path="/orders"> <Orders/> </Route>
+									<Route path="/contact"> <Contact/> </Route>
+									<Route path="/recepten"> <Recepten/> </Route>
 									<Route path="/">
 										<Home/>
 									</Route>
