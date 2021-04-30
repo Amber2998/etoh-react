@@ -16,15 +16,15 @@ class Recepten extends React.Component {
 				leftImage={'Images/BarbaraCocktailSingle.jpg'}
 				appleImage={'Images/greenapple.png'}
 				title={t('Lady Barbara\'s Juicy Pride')}
-				titleColor={'#ECC814'}
-					text={<h4>Voor één cocktail</h4>}
+				titleColor={'#109318'}
+					text={'Voor één cocktail'}
 					listItems={[
 						'8 cl ' + t('Lady Barbarba'),
 						'6 cl ' + t('Appel-Rabarbersap'),
 						'1 cl ' + t('Limoensap'),
                         '4 ' + t('Frambozen')               
 					]}
-					recTitle={<h4>Werkwijze</h4>}
+					recTitle={'Werkwijze'}
 					stappenplan={[
 						'1. Doe de Lady Barbara, het Appel-Rabarbersap en het limoensap in een shaker',
 						'2. Shake alles goed door elkaar',
@@ -39,15 +39,16 @@ class Recepten extends React.Component {
 			<ReceptenKaart
 				rightImage={'Images/CherryCocktail.jpeg'}
 				title={t('Madam Cherry\'s Classy Temper')}
-                titleColor={'#ECC814'}
-				text={<h4>Voor één cocktail</h4>}
+				appleImage={'Images/redapple.png'}
+				titleColor={'#c20608'}
+				text={'Voor één cocktail'}
 				listItems={[
 					'5 cl ' + t('Madam Cherry'),
 					'2 cl ' + t('Vodka'),
 					'2 cl ' + t('Limoensap'),
                     '4 cl ' + t('Veenbessensap')   
 				]}
-				recTitle={<h4>Werkwijze</h4>}
+				recTitle={'Werkwijze'}
 				stappenplan={[
 					'1. Doe alles samen in een glas',
 					'2. Voeg eventueel wat ijsblokjes toe',
@@ -61,14 +62,15 @@ class Recepten extends React.Component {
 			<ReceptenKaart
 				leftImage={'Images/FranCocktailCloseSingle.jpg'}
 				title={t('Duchess Fran\'s Simple Berry')}
-                titleColor={'#ECC814'}
-				text={<h4>Voor één cocktail</h4>}
+				appleImage={'Images/pinkapple.png'}
+                titleColor={'#dd027a'}
+				text={'Voor één cocktail'}
 				listItems={[
 					'8 cl ' + t('Duchess Fran'),
 					'1 cl ' + t('Rozensiroop'),
 					'3 cl ' + t('Limoensap')
 				]}
-				recTitle={<h4>Werkwijze</h4>}
+				recTitle={'Werkwijze'}
 				stappenplan={[
 					'1. Doe alles samen in een glas',
 					'2. Voeg eventueel wat ijsblokjes toe',
@@ -81,14 +83,15 @@ class Recepten extends React.Component {
 			<ReceptenKaart
 				rightImage={'Images/GingerCocktailCloseSingle.jpg'}
 				title={t('Miss Ginger\'s Summer Softness')}
-                titleColor={'#ECC814'}
-				text={<h4>Voor één cocktail</h4>}
+				appleImage={'Images/yellowapple.png'}
+                titleColor={'#e3c115'}
+				text={'Voor één cocktail'}
 				listItems={[
 					'6 cl ' + t('Miss Ginger'),
 					'1/3 ' + t('Limoen'),
 					'10 cl ' + t('Gemberbier of limonade met gember')
 				]}
-				recTitle={<h4>Werkwijze</h4>}
+				recTitle={'Werkwijze'}
 				stappenplan={[
 					'1. Leg de limoen in het glas en duw deze plat met een vork of lepel zodat er wat sap uit kan.',
 					'2. Voeg de Miss Ginger en het gemberbier of de limonade toe',
