@@ -13,7 +13,7 @@ export class ReceptenKaart extends React.Component {
 
 				<Card.Body className={'d-flex flex-column align-items-center w-100'}>
 					{!! title && <Card.Title className={'d-flex flex-row-reverse align-items-lg-end w-100 '}>
-						<span style={{color: "gray", fontWeight: "bolder", fontSize: "24px"}}>{title}</span>
+						<span style={{color: 'titleColor', fontWeight: "bolder", fontSize: "24px"}}>{title}</span>
 					</Card.Title>}
 
 					<Card.Text className={'w-100'}>
