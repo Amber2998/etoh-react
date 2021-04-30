@@ -59,7 +59,7 @@ class Recepten extends React.Component {
                     <hr className={'my-5'}/>
 
 			<ReceptenKaart
-				leftImage={'Images/FranCocktailCloseSIngle.jpg'}
+				leftImage={'Images/FranCocktailCloseSingle.jpg'}
 				title={t('Duchess Fran\'s Simple Berry')}
                 titleColor={'#ECC814'}
 				text={<h4>Voor één cocktail</h4>}
