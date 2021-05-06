@@ -11,8 +11,6 @@ const Products = ({t}) => {
 			<p>{t('Onze producten komen in hersluitbare glazen flessen van 500ml en bevatten een alcoholpercentage van 17%.')}</p>
 			<p>{t('yesyesyes tien windjes in een fles')}</p>
 
-			<MoederdagSpecial/>
-
 			<ProductKaart
 				leftImage={'Images/Rabarber.png'}
 				appleImage={'Images/greenapple.png'}
