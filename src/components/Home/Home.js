@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { withNamespaces } from 'react-i18next';
 import { Carousel, CarouselItem } from 'react-bootstrap';
-
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Home = ({ t }) => {
 	return <div>
@@ -11,19 +12,19 @@ const Home = ({ t }) => {
 
 					<Carousel controls={true}>
 						<CarouselItem  >
-							<img src="Images/Foto7.jpg" alt="test" width="100%"/>
+							<LazyLoadImage effect={'blur'} src="Images/Foto7.jpg" alt="test" width="100%"/>
 						</CarouselItem>
 						<CarouselItem>
-							<img src="Images/Foto3.jpg" alt="test" width="100%"/>
+							<LazyLoadImage effect={'blur'} src="Images/Foto3.jpg" alt="test" width="100%"/>
 						</CarouselItem>
 						<CarouselItem>
-							<img src="Images/DSC_0025.jpg" alt="test" width="100%"/>
+							<LazyLoadImage effect={'blur'} src="Images/DSC_0025.jpg" alt="test" width="100%"/>
 						</CarouselItem>
 						<CarouselItem>
-							<img src="Images/DSC_0695.jpg" alt="test" />
+							<LazyLoadImage effect={'blur'} src="Images/DSC_0695.jpg" alt="test" />
 						</CarouselItem>
-    <CarouselItem>
-							<img src="Images/Team.jpg" alt="test" />
+						<CarouselItem>
+							<LazyLoadImage effect={'blur'} src="Images/Team.jpg" alt="test" />
 						</CarouselItem>
 					</Carousel>
 
@@ -36,14 +37,14 @@ const Home = ({ t }) => {
 		<div className="card" style={{ margin: '1em 0' }}>
 			<div className="row">
 				<div className="col-md-4">
-					<img src="Images/test3.png" className="card-img" alt="Test1"
+					<LazyLoadImage effect={'blur'} src="Images/test3.png" className="card-img" alt="Test1"
 						 style={{ width: '100%', objecFit: 'cover' }}/>
 				</div>
 				<div className="col-md-8">
 					<div className="card-body">
 						<div className="card-title d-flex flex-row-reverse">
 								<span className={'apple-text'} style={{ color: '#E6007E', fontWeight: 'bolder', fontSize: '32px' }}>
-									<img src="Images/pinkapple.png" alt="apple" height="32px"/>
+									<LazyLoadImage effect={'blur'} src="Images/pinkapple.png" alt="apple" height="32px"/>
 									{t('EtOH, belgian Flavors in a bottle')}
 								</span>
 						</div>
@@ -63,7 +64,7 @@ const Home = ({ t }) => {
 						<div className="card-title">
 								<span className={'apple-text'}
 									  style={{ color: '#E6007E', fontWeight: 'bolder', fontSize: '32px' }}>
-                                      <img src="Images/pinkapple.png" alt="apple" height="32px"/>
+                                      <LazyLoadImage effect={'blur'} src="Images/pinkapple.png" alt="apple" height="32px"/>
 									{t('Onze Missie: Lokale passie')} </span>
 						</div>
 						<div className="card-text ">
@@ -73,24 +74,24 @@ const Home = ({ t }) => {
 
 				</div>
 				<div className="col-md-4">
-					<img src="Images/Foto1.jpg" className="card-img" alt="Test1"
+					<LazyLoadImage effect={'blur'} src="Images/Foto1.jpg" className="card-img" alt="Test1"
 						 style={{ height: '100%', objectFit: 'cover' }}/>
 				</div>
 			</div>
 		</div>
 		<div>
 			<div className="d-flex justify-content-center">
-				<h3 className={'apple-text'}><img src="Images/greenapple.png" alt="apple" height="24px"/>{t('Onze producten')}</h3>
+				<h3 className={'apple-text'}><LazyLoadImage effect={'blur'} src="Images/greenapple.png" alt="apple" height="24px"/>{t('Onze producten')}</h3>
 			</div>
 			<div className="d-flex justify-content-center">
 				<Link to={'/products'} className={'d-flex justify-content-center'}>
 					<div className={'d-flex flex-wrap justify-content-center'}>
-                        <img className={'ladyImage'} src="Images/Rabarber.png" alt={'rabarber'}/>
-						<img className={'ladyImage'} src="Images/Madam%20Cherry.png" alt={'madam-cherry'}/>
+                        <LazyLoadImage effect={'blur'} className={'ladyImage'} src="Images/Rabarber.png" alt={'rabarber'}/>
+						<LazyLoadImage effect={'blur'} className={'ladyImage'} src="Images/Madam%20Cherry.png" alt={'madam-cherry'}/>
 					</div>
 					<div className={'d-flex flex-wrap justify-content-center'}>
-                        <img className={'ladyImage'} src="Images/Fran.png" alt={'duchess-fran'}/>
-						<img className={'ladyImage'} src="Images/MissGinger.png" alt={'miss-ginger'}/>
+                        <LazyLoadImage effect={'blur'} className={'ladyImage'} src="Images/Fran.png" alt={'duchess-fran'}/>
+						<LazyLoadImage effect={'blur'} className={'ladyImage'} src="Images/MissGinger.png" alt={'miss-ginger'}/>
 					</div>
 				</Link>
 			</div>
@@ -99,11 +100,11 @@ const Home = ({ t }) => {
 			<br/>
 			<div className="d-flex justify-content-center">
 				<h3 className={'apple-text'}>
-					<img src="Images/greenapple.png" alt="apple" height="24px"/>
+					<LazyLoadImage effect={'blur'} src="Images/greenapple.png" alt="apple" height="24px"/>
 					{t('Onze verkooppunten')}</h3>
 			</div>
 			<div className="d-flex flex-wrap">
-				<img src="Images/vierslag.png" height="100px" alt={'vierslag'}/>
+				<LazyLoadImage effect={'blur'} src="Images/vierslag.png" height="100px" alt={'vierslag'}/>
 				<div className="card-text ">
 					<p> {t('Bistro De Vierslag')} </p>
 					<p> {t('Dorpstraat 15')}</p>
@@ -116,14 +117,14 @@ const Home = ({ t }) => {
 			<br/>
 			<div className="d-flex justify-content-center">
 				<h3 className={'apple-text'}>
-					<img src="Images/greenapple.png" alt="apple" height="24px"/>
+					<LazyLoadImage effect={'blur'} src="Images/greenapple.png" alt="apple" height="24px"/>
 					{t('Onze partners')}</h3>
 			</div>
 			<div className="d-flex flex-wrap justify-content-between">
-				<img src="Images/bsc.jpeg" height="100px" alt={'bsc'}/>
-				<img src="Images/pipo.png" height="100px" alt={'pipo'}/>
-				<img src="Images/fruitvanhellemont.jpeg" height="100px" alt={'fruit-vanhellemont'}/>
-				<img src="Images/vlajo.jpg" height="100px" alt={'vlajo'}/>
+				<LazyLoadImage effect={'blur'} src="Images/bsc.jpeg" height="100px" alt={'bsc'}/>
+				<LazyLoadImage effect={'blur'} src="Images/pipo.png" height="100px" alt={'pipo'}/>
+				<LazyLoadImage effect={'blur'} src="Images/fruitvanhellemont.jpeg" height="100px" alt={'fruit-vanhellemont'}/>
+				<LazyLoadImage effect={'blur'} src="Images/vlajo.jpg" height="100px" alt={'vlajo'}/>
 			</div>
 		</div>
 	</div>

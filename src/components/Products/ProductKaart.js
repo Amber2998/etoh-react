@@ -1,5 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export default class ProductKaart extends React.Component {
 
@@ -7,7 +9,12 @@ export default class ProductKaart extends React.Component {
 		let {leftImage, appleImage, title, subtitle, text, rightImage, titleColor, prijs} = this.props;
 		return <Card className={'my-2'}>
 				<div className={'d-flex flex-column flex-md-row'}>
-					<Card.Img className={'container-fluid'} src={leftImage} style={{height:'14em', width: 'auto', objectFit: 'cover', padding: 0}}/>
+					<Card.Img
+						className={'container-fluid'}
+						src={leftImage}
+						style={{height:'14em', width: 'auto', objectFit: 'cover', padding: 0}}
+						as={e =>  <LazyLoadImage effect={'blur'} {...e}/> }
+					/>
 
 					<div className={'d-flex'}>
 						<Card.Body>
@@ -28,7 +35,11 @@ export default class ProductKaart extends React.Component {
 						</Card.Body>
 
 						{
-							!!rightImage && <Card.Img src={rightImage} style={{height:'14em', width: 'auto', objectFit: 'cover'}}/>
+							!!rightImage && <Card.Img
+								src={rightImage}
+								style={{height:'14em', width: 'auto', objectFit: 'cover'}}
+								as={e =>  <LazyLoadImage effect={'blur'} {...e}/> }
+							/>
 						}
 
 					</div>

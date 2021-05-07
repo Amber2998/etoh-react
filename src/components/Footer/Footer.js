@@ -1,5 +1,8 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 const Footer = ({ t, cookieState, ...props }) => {
 	let {checkedCookies, allowsCookies, oldEnough, cookieNoFn} = cookieState;
@@ -7,16 +10,16 @@ const Footer = ({ t, cookieState, ...props }) => {
 		<footer>
 			<div className="d-flex justify-content-center">
 				<a href="https://www.facebook.com/EtOHBeverages">
-					<img src="Images/facebook.png" height="50px" alt={'facebook'}/>
+					<LazyLoadImage effect={'blur'} src="Images/facebook.png" height="50px" alt={'facebook'}/>
 				</a>
         <a href="https://www.instagram.com/etoh.beverages/">
-					<img src="Images/instagram.png" height="50px" alt={'instagram'}/>
+					<LazyLoadImage effect={'blur'} src="Images/instagram.png" height="50px" alt={'instagram'}/>
 				</a>
 				<a href="https://wa.me/32478239016">
-					<img src="Images/whatsapp.png" height="50px" alt={'whatsapp'}/>
+					<LazyLoadImage effect={'blur'} src="Images/whatsapp.png" height="50px" alt={'whatsapp'}/>
 				</a>
 				<a href="mailto: etohbeverages@gmail.com">
-					<img src="Images/email.png" height="50px" alt={'email'}/>
+					<LazyLoadImage effect={'blur'} src="Images/email.png" height="50px" alt={'email'}/>
 				</a>
 			</div>
 			<div className="d-flex justify-content-center ">

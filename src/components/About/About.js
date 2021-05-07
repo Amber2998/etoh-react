@@ -1,5 +1,7 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 const About = ({ t, ...props }) => {
@@ -12,11 +14,11 @@ const About = ({ t, ...props }) => {
 						<h2 className={'apple-text'}> <img src="Images/redapple.png" alt="apple" height="24px"/>  Wout</h2>
 						<p className={'text-sm-right text-center'}>Roadie </p>
 					</div>
-					<img src="Images/WoutReekmans.jpg" alt="Wout Reekmans" width="300px" height="300px"/>
+					<LazyLoadImage effect={'blur'} src="Images/WoutReekmans.jpg" alt="Wout Reekmans" width="300px" height="300px"/>
 				</div>
 
 				<div className="d-flex flex-column-reverse flex-lg-row align-items-center align-items-sm-stretch flex-sm-row-reverse justify-content-between justify-content-lg-start col-lg-6 m-lg-0 m-1" style={{padding: '0'}}>
-					<img src="Images/DylanVerschoren.jpg" alt="Dylan Verschoren" width="300px" height="300px"/>
+					<LazyLoadImage effect={'blur'} src="Images/DylanVerschoren.jpg" alt="Dylan Verschoren" width="300px" height="300px"/>
 					<div className="mr-sm-4 ml-lg-4">
 						<h2 className={'apple-text d-flex flex-row-reverse flex-lg-row'}>Dylan<img src="Images/redapple.png" alt="apple" height="24px"/></h2>
 						<p className='text-center text-sm-right text-lg-left'>Treasurer</p>
@@ -30,11 +32,11 @@ const About = ({ t, ...props }) => {
 						<h2 className={'apple-text'} > <img src="Images/redapple.png" alt="apple" height="24px"/> Amber</h2>
 						<p  className={'text-sm-right text-center'}>Mastermind</p>
 					</div>
-					<img src="Images/AmberClaes.jpg" alt="Amber Claes" width="300px" height="300px"/>
+					<LazyLoadImage effect={'blur'} src="Images/AmberClaes.jpg" alt="Amber Claes" width="300px" height="300px"/>
 				</div>
 
 				<div className="d-flex flex-column-reverse flex-lg-row align-items-center align-items-sm-stretch flex-sm-row-reverse justify-content-between justify-content-lg-start col-lg-6 m-lg-0 m-1" style={{padding: '0'}}>
-					<img src="Images/ElviraBeyens.jpg" alt="Elvira Beyens" width="300px" height="300px"/>
+					<LazyLoadImage effect={'blur'} src="Images/ElviraBeyens.jpg" alt="Elvira Beyens" width="300px" height="300px"/>
 					<div className="mr-sm-4 ml-lg-4">
 						<h2 className={'apple-text d-flex flex-row-reverse flex-lg-row'}>Elvira<img src="Images/redapple.png" alt="apple" height="24px"/></h2>
 						<p className={'text-center text-sm-right text-lg-left'}>Storyteller</p>

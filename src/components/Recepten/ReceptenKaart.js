@@ -1,5 +1,7 @@
 import React from 'react';
 import { Card, ListGroup } from 'react-bootstrap';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export class ReceptenKaart extends React.Component {
 
@@ -8,14 +10,18 @@ export class ReceptenKaart extends React.Component {
 		return <Card className={'my-2 p-4'}>
 			<div className={`d-flex flex-column${!!rightImage ? '-reverse' : ''} flex-lg-row align-items-center`}>
 				{!!leftImage && <div className={'d-flex col-lg-5 justify-content-center'} style={{padding: 0}}>
-					<Card.Img src={leftImage} className={'justify-content-center'} style={{ objectFit: 'cover', padding:0}}/>
+					<Card.Img
+						src={leftImage}
+						className={'justify-content-center'}
+						style={{ objectFit: 'cover', padding:0}}
+						as={e =>  <LazyLoadImage effect={'blur'} {...e}/> }
+					/>
 				</div>}
 
 				<Card.Body className={'d-flex flex-column align-items-center w-100 '}>
 					{!! title && <Card.Title className={`d-flex flex-row${!!leftImage ? '-reverse' : ''} w-100 justify-content-between justify-content-md-start `}>
 						<span style={{color: !!titleColor && titleColor, fontWeight: "bolder", fontSize: "24px"}}>{title}</span>
-						{!!appleImage && <img src={appleImage} alt="apple" height="24px"/>}
-					</Card.Title>}
+						{!!appleImage && <LazyLoadImage effect={'blur'} src={appleImage} alt="apple" height="24px"/>} </Card.Title>}
 
 					<Card.Text className={'w-100'}>
 						{ !!text && <h4 style={{fontSize: '1.4em'}}>{text}</h4>}
@@ -28,7 +34,12 @@ export class ReceptenKaart extends React.Component {
 				</Card.Body>
 
 				{!!rightImage &&<div className={'d-flex col-lg-5 justify-content-center'} style={{padding: 0}}>
-					<Card.Img src={rightImage} className={'justify-content-center'} style={{ objectFit: 'cover', padding:0}}/>
+					<Card.Img
+						src={rightImage}
+						className={'justify-content-center'}
+						style={{ objectFit: 'cover', padding:0}}
+						as={e =>  <LazyLoadImage effect={'blur'} {...e}/> }
+					/>
 				</div>}
 			</div>
 			<Card.Body>

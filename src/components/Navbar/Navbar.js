@@ -2,6 +2,8 @@ import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { withRouter, NavLink } from 'react-router-dom';
 import { withNamespaces } from 'react-i18next';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 const CustomNavLink = ({to, label, ...props}) => {
@@ -23,7 +25,7 @@ class CustomNavBar extends React.Component {
 
 		return <Navbar expand="lg" collapseOnSelect={true} sticky="top" style={{}} >
 			<Navbar.Brand href={"/"}>
-				<img src="Images/EtOH%20logo.png" alt="Logo" style={{ width: '100px' }}/>
+				<LazyLoadImage effect={'blur'} src="Images/EtOH%20logo.png" alt="Logo" style={{ width: '100px' }}/>
 			</Navbar.Brand>
 			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 			<Navbar.Collapse id="responsive-navbar-nav">

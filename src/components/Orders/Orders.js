@@ -1,6 +1,8 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
 import OrderForm from './OrderForm/OrderForm';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 class Orders extends React.Component {
 
@@ -12,10 +14,10 @@ class Orders extends React.Component {
 				<div>
 					<h1>{t('Via dit formulier kan je je bestelling plaatsen.')}</h1>
 					<h3>{t('Hoe werkt het?')}</h3>
-					<p className={'apple-text'}><img src="Images/greenapple.png" alt="apple" height="16px"/>{t('Vul onderstaand formulier in.')}</p>
-					<p className={'apple-text'}><img src="Images/redapple.png" alt="apple" height="16px"/>{t('Je ontvangt van ons een e-mail met de betaalgegevens.')}</p>
-					<p className={'apple-text'}><img src="Images/pinkapple.png" alt="apple" height="16px"/>	{t('Maak de betaling in orde.')}</p>
-					<p className={'apple-text'}><img src="Images/yellowapple.png" alt="apple" height="16px"/>{t('Wij sturen je een mail om de betaling de bevestigen en de details voor de verzending of ophaling van jouw bestelling.')}</p>
+					<p className={'apple-text'}><LazyLoadImage effect={'blur'} src="Images/greenapple.png" alt="apple" height="16px"/>{t('Vul onderstaand formulier in.')}</p>
+					<p className={'apple-text'}><LazyLoadImage effect={'blur'} src="Images/redapple.png" alt="apple" height="16px"/>{t('Je ontvangt van ons een e-mail met de betaalgegevens.')}</p>
+					<p className={'apple-text'}><LazyLoadImage effect={'blur'} src="Images/pinkapple.png" alt="apple" height="16px"/>	{t('Maak de betaling in orde.')}</p>
+					<p className={'apple-text'}><LazyLoadImage effect={'blur'} src="Images/yellowapple.png" alt="apple" height="16px"/>{t('Wij sturen je een mail om de betaling de bevestigen en de details voor de verzending of ophaling van jouw bestelling.')}</p>
 				</div>
 
 				<h3>Bestelformulier</h3>
@@ -24,7 +26,7 @@ class Orders extends React.Component {
 				</div>
 
 				<div style={{display:"flex", justifyContent: "center"}}>
-					<img className={'img-fluid'} src="Images/alcoholverbod.jpg" alt={'banner-alcoholwet-10-dec-2009'}/>
+					<LazyLoadImage effect={'blur'} className={'img-fluid'} src="Images/alcoholverbod.jpg" alt={'banner-alcoholwet-10-dec-2009'}/>
 				</div>
 			</div>
 		)

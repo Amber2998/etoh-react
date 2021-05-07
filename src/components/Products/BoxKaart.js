@@ -1,5 +1,7 @@
 import React from 'react';
 import { Card, ListGroup } from 'react-bootstrap';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export class BoxKaart extends React.Component {
 
@@ -8,7 +10,12 @@ export class BoxKaart extends React.Component {
 		return <Card className={'my-2'}>
 			<div className={'d-flex flex-column flex-md-row align-items-center'}>
 				{!!leftImage && <div className={'d-flex col-7 justify-content-center'} style={{padding: 0}}>
-					<Card.Img src={leftImage} className={'justify-content-center'} style={{ objectFit: 'cover', padding:0}}/>
+					<Card.Img
+						src={leftImage}
+						className={'justify-content-center'}
+						style={{ objectFit: 'cover', padding:0}}
+						as={e =>  <LazyLoadImage effect={'blur'} {...e}/> }
+					/>
 				</div>}
 
 				<Card.Body className={'d-flex flex-column align-items-center '}>
@@ -27,7 +34,12 @@ export class BoxKaart extends React.Component {
 				</Card.Body>
 
 				{!!rightImage &&<div className={'d-flex col-7 justify-content-center'} style={{padding: 0}}>
-					<Card.Img src={leftImage} className={'justify-content-center'} style={{ objectFit: 'cover', padding:0}}/>
+					<Card.Img
+						src={leftImage}
+						className={'justify-content-center'}
+						style={{ objectFit: 'cover', padding:0}}
+						as={e =>  <LazyLoadImage effect={'blur'} {...e}/> }
+					/>
 				</div>}
 			</div>
 		</Card>

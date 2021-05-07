@@ -1,6 +1,7 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
-
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 class Contact extends React.Component {
 	render () {
@@ -17,10 +18,10 @@ class Contact extends React.Component {
 										Geheime locatie <br/>
 										Ergens in Vlaams-Brabant
 									</p>
-                        <img src="Images/greenapple.png" alt="apple" height="24px"/>
-            <img src="Images/redapple.png" alt="apple" height="24px"/>
-            <img src="Images/pinkapple.png" alt="apple" height="24px"/>
-            <img src="Images/yellowapple.png" alt="apple" height="24px"/>
+                        <LazyLoadImage effect={'blur'} src="Images/greenapple.png" alt="apple" height="24px"/>
+            <LazyLoadImage effect={'blur'} src="Images/redapple.png" alt="apple" height="24px"/>
+            <LazyLoadImage effect={'blur'} src="Images/pinkapple.png" alt="apple" height="24px"/>
+            <LazyLoadImage effect={'blur'} src="Images/yellowapple.png" alt="apple" height="24px"/>
             <p></p>
 								</div>
 							</div>
