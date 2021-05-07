@@ -44,7 +44,7 @@ const Home = ({ t }) => {
 					<div className="card-body">
 						<div className="card-title d-flex flex-row-reverse">
 								<span className={'apple-text'} style={{ color: '#E6007E', fontWeight: 'bolder', fontSize: '32px' }}>
-									<LazyLoadImage effect={'blur'} src="Images/pinkapple.png" alt="apple" height="32px"/>
+									<LazyLoadImage effect={'blur'} className={'d-flex'} src="Images/pinkapple.png" alt="apple" height="32px" />
 									{t('EtOH, belgian Flavors in a bottle')}
 								</span>
 						</div>
@@ -64,7 +64,7 @@ const Home = ({ t }) => {
 						<div className="card-title">
 								<span className={'apple-text'}
 									  style={{ color: '#E6007E', fontWeight: 'bolder', fontSize: '32px' }}>
-                                      <LazyLoadImage effect={'blur'} src="Images/pinkapple.png" alt="apple" height="32px"/>
+                                      <LazyLoadImage effect={'blur'} className={'d-flex'} src="Images/pinkapple.png" alt="apple" height="32px"/>
 									{t('Onze Missie: Lokale passie')} </span>
 						</div>
 						<div className="card-text ">
@@ -74,14 +74,14 @@ const Home = ({ t }) => {
 
 				</div>
 				<div className="col-md-4">
-					<LazyLoadImage effect={'blur'} src="Images/Foto1.jpg" className="card-img" alt="Test1"
+					<LazyLoadImage effect={'blur'} className={'d-flex'} src="Images/Foto1.jpg" className="card-img" alt="Test1"
 						 style={{ height: '100%', objectFit: 'cover' }}/>
 				</div>
 			</div>
 		</div>
 		<div>
 			<div className="d-flex justify-content-center">
-				<h3 className={'apple-text'}><LazyLoadImage effect={'blur'} src="Images/greenapple.png" alt="apple" height="24px"/>{t('Onze producten')}</h3>
+				<h3 className={'apple-text'}><LazyLoadImage effect={'blur'} className={'d-flex'} src="Images/greenapple.png" alt="apple" height="24px"/>{t('Onze producten')}</h3>
 			</div>
 			<div className="d-flex justify-content-center">
 				<Link to={'/products'} className={'d-flex justify-content-center'}>
@@ -100,7 +100,7 @@ const Home = ({ t }) => {
 			<br/>
 			<div className="d-flex justify-content-center">
 				<h3 className={'apple-text'}>
-					<LazyLoadImage effect={'blur'} src="Images/greenapple.png" alt="apple" height="24px"/>
+					<LazyLoadImage effect={'blur'} className={'d-flex'} src="Images/greenapple.png" alt="apple" height="24px"/>
 					{t('Onze verkooppunten')}</h3>
 			</div>
 			<div className="d-flex flex-wrap">
@@ -117,7 +117,7 @@ const Home = ({ t }) => {
 			<br/>
 			<div className="d-flex justify-content-center">
 				<h3 className={'apple-text'}>
-					<LazyLoadImage effect={'blur'} src="Images/greenapple.png" alt="apple" height="24px"/>
+					<LazyLoadImage effect={'blur'} className={'d-flex'} src="Images/greenapple.png" alt="apple" height="24px"/>
 					{t('Onze partners')}</h3>
 			</div>
 			<div className="d-flex flex-wrap justify-content-between">
