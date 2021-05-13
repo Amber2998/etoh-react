@@ -150,6 +150,7 @@ class OrderForm extends React.Component {
 										<option value={'Gratis ophalen - Free pick up in Leuven (bij Elvira)'}>{t('Gratis ophalen in Leuven (bij Elvira)')}</option>
 										<option value={'Gratis ophalen - Free pick up in Heusden-Zolder (bij Wout)'}>{t('Gratis ophalen in Heusden-Zolder (bij Wout)')}</option>
 										<option value={'Verzending in België (+verzendkost) - Shipping in Belgium (+shipping cost)'}>{t('Verzending in België (+verzendkost) - Shipping in Belgium (+shipping cost)')}</option>
+										<option value={'Tijdelijk gratis verzending in Leuven (postcode 3000)'}>{t('Tijdelijk gratis verzending in Leuven (postcode 3000)')}</option>
 									</BForm.Control>
 								</BForm.Group>
 							} }
