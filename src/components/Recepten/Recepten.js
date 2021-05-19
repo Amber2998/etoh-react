@@ -99,6 +99,31 @@ class Recepten extends React.Component {
 					'4. Smakelijk!',
 				]}
 			/>
+<hr className={'my-5'}/>
+
+			<ReceptenKaart
+				rightImage={'Images/GingerCocktailWide.jpg'}
+				title={t('Miss Ginger\s Sabayon')}
+				appleImage={'Images/yellowapple.png'}
+                titleColor={'#e3c115'}
+				text={'Voor 4 personen'}
+				listItems={[
+					'85 ml ' + t('Miss Ginger'),
+					'4 el ' + t('Kristalsuiker'),
+					'4 ' + t('Eierdooiers')
+				]}
+				recTitle={'Werkwijze'}
+				stappenplan={[
+					'1. Breng een pan met water aan de kook.',
+					'2. Scheidt de eieren. We gebruiken alleen de eierdooiers.',
+					'3. Plaats een kom over de pan. Zo krijg je een bain-marie.',
+					'4. Doe de eierdooiers met de suiker in de kom en klop deze luchtig met de suiker.',
+                    '5. Voeg al kloppend beetje bij beetje Miss Ginger toe.',
+                    '6. Blijf een tiental minuten kloppen tot je een luchtige sabayon hebt.',
+                    '7. Schenk in glazen en geniet!',
+                    'Tip: Ook lekker met onze andere smaken!',
+				]}
+			/>
 		</React.Fragment>
 	}
 }
