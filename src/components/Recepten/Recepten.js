@@ -78,6 +78,34 @@ class Recepten extends React.Component {
 					'4. Smakelijk!',
 				]}
 			/>
+                             <ReceptenKaart
+				leftImage={'Images/FranCocktailClose.jpg'}
+				title={t('Duchess Fran\'s Triffle ')}
+				appleImage={'Images/pinkapple.png'}
+                titleColor={'#dd027a'}
+				text={'Voor 3 personen'}
+				listItems={[
+					'1 ' + t('Appel'),
+					'1 ' + t('Eiwit'),
+					'1 dl ' + t('Room'),
+                    '125 gr ' + t('Mascarpone'),
+                    '1,5 el ' + t('Honing'),
+                    '40 ml ' + t('Duchess Fran'),
+                    '3 ' + t('Droge Koekjes'),
+                    '1 snuifje ' + t('Kristalsuiker'),
+                    t('Citroensap')
+				]}
+				recTitle={'Werkwijze'}
+				stappenplan={[
+					'1. Was de appel en snij deze in blokjes. Meng hieronder de honing, het citroensap en Duchess Fran',
+					'2. Klop de mascarpone op met de room. Hier mag ook wat citroensap bij.',
+					'3. Klop het eiwit stijf met een beetje kristalsuiker.',
+					'4. Spatel het eiwit onder het mascarpone mengsel.',
+                    '5. Vul de glazen afwisselend met: koekjeskruimels, appelmengsel en mascarponecrème.',
+                    '6. Zet minstens 1 uur in de koelkast.',
+                    '7. Smakelijk!'
+				]}
+			/>
                      <hr className={'my-5'}/>
 
 			<ReceptenKaart
