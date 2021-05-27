@@ -111,6 +111,14 @@ const Home = ({ t }) => {
 					<p> {t('3440 Halle-Booienhoven')}</p>
 				</div>
 			</div>
+            <div className="d-flex flex-wrap">
+				<LazyLoadImage effect={'blur'} src="Images/GOS.jpeg" height="100px" alt={'GOS'}/>
+				<div className="card-text ">
+					<p> {t('Drankenhandel Firma GOS')} </p>
+					<p> {t('Nieuwe Steenweg 23')}</p>
+					<p> {t('3870 Heers')}</p>
+				</div>
+			</div>
 		</div>
 		<br/>
 		<div>
