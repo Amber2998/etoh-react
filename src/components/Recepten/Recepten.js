@@ -131,7 +131,7 @@ class Recepten extends React.Component {
 
 			<ReceptenKaart
 				rightImage={'Images/GingerCocktailWide.jpg'}
-				title={t('Miss Ginger\s Sabayon')}
+				title={t('Miss Ginger\'s Sabayon')}
 				appleImage={'Images/yellowapple.png'}
                 titleColor={'#e3c115'}
 				text={'Voor 4 personen'}

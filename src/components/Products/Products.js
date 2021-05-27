@@ -1,6 +1,5 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
-import MoederdagSpecial from './MoederdagSpecial';
 import ProductKaart from './ProductKaart';
 import BoxKaart from './BoxKaart';
 

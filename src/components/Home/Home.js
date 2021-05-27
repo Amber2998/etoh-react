@@ -4,6 +4,7 @@ import { withNamespaces } from 'react-i18next';
 import { Carousel, CarouselItem } from 'react-bootstrap';
 import {LazyLoadImage} from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import SellerCard from './SellerCard/SellerCard';
 
 const Home = ({ t }) => {
 	return <div>
@@ -103,22 +104,32 @@ const Home = ({ t }) => {
 					<LazyLoadImage effect={'blur'} className={'d-flex'} src="Images/greenapple.png" alt="apple" height="24px"/>
 					{t('Onze verkooppunten')}</h3>
 			</div>
-			<div className="d-flex flex-wrap">
-				<LazyLoadImage effect={'blur'} src="Images/vierslag.png" height="100px" alt={'vierslag'}/>
-				<div className="card-text ">
-					<p> {t('Bistro De Vierslag')} </p>
-					<p> {t('Dorpstraat 15')}</p>
-					<p> {t('3440 Halle-Booienhoven')}</p>
-				</div>
+
+			<div className={'d-flex flex-wrap justify-content-around'}>
+
+				<SellerCard
+					title={'Bistro De Vierslag'}
+					image={'Images/vierslag.png'}
+					address={'Dorpstraat 15, 3440 Halle-Booienhoven'}
+					addresslink={'https://goo.gl/maps/7Jrs6FD84xJgBsBd8'}
+					phone={'0472/74.56.50'}
+					website={'www.devierslag.be'}
+				/>
+
+				<SellerCard
+					title={'Drankenhandel Firma Gos'}
+					image={'Images/GOS.jpeg'}
+					address={'Nieuwe Steenweg 23, 3870 Heers'}
+					addresslink={'https://goo.gl/maps/wsJkexRPTS6AXxGh6'}
+					phone={'011/48.67.67'}
+					email={'info@firmagos.be'}
+					website={'www.drankenhandelgos.be'}
+				/>
+
+
+
 			</div>
-            <div className="d-flex flex-wrap">
-				<LazyLoadImage effect={'blur'} src="Images/GOS.jpeg" height="100px" alt={'GOS'}/>
-				<div className="card-text ">
-					<p> {t('Drankenhandel Firma GOS')} </p>
-					<p> {t('Nieuwe Steenweg 23')}</p>
-					<p> {t('3870 Heers')}</p>
-				</div>
-			</div>
+
 		</div>
 		<br/>
 		<div>
