@@ -8,21 +8,26 @@ export class MoederdagSpecial extends React.Component {
 	render () {
 		let {t} = this.props;
 		return <Alert variant={'danger'} >
-			<Alert.Heading>{t('Moederdag Special!')}</Alert.Heading>
+			<Alert.Heading>{t('Vaderdagtip!')}</Alert.Heading>
 			<hr/>
 			<BoxKaart
-				leftImage={'Images/moederdagbox.jpeg'}
-				title={t('Moederdag Box')}
+				leftImage={'Images/vaderdagteaser.jpeg'}
+				title={t('Apero Box')}
 				text={''}
 				listItems={[
-					'1 x ' + t('Fles (500ml) naar keuze'),
-					'1 x ' + t('EtOH glas gegraveerd'),
-					'2 x ' + t('Belgische tonic'),
-					<a href={'https://www.nicely.be/'} style={{color:'var(--danger)'}}>{t('Granola by Nicely')}</a>,
-					<a href={'https://balerdon.be/'} style={{color:'var(--danger)'}}>{t('Chocolade by Balerdon')}</a>,
-					<a href={'http://simonleveltleuven.be'} style={{color:'var(--danger)'}}>{t('Mama Thee by Simon Lévelt')}</a>,
+					'4 x ' + t('1 Flesje van elke smaak (4 x 200ml)'),
+					'1 x ' + t('Tonic'),
+                    '1 x ' + t('Ginger Ale'),      
+					'1 x ' + t('Hand Cooked Chips'),
+                    '1 x ' + t('Spice Balls'),
+                    '1 x ' + t('Knabbelbacon'),
+                    '1 x ' + t('Tapenade'),
+                    '1 x ' + t('Mini Grissini'),
+                    '1 x ' + t('Pan Tostado'),
+                    '1 x ' + t('Scrocchi'),
+					
 				]}
-				prijs={t('Prijs') + ' € 34,95'}
+				prijs={t('Prijs') + ' € 49,95'}
 			/>
 		</Alert>
 	}

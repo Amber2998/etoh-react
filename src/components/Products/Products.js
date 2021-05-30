@@ -1,5 +1,6 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
+import MoederdagSpecial from './MoederdagSpecial';
 import ProductKaart from './ProductKaart';
 import BoxKaart from './BoxKaart';
 
@@ -9,6 +10,8 @@ const Products = ({t}) => {
 			<h1>{t('Ontdek hier onze producten')}</h1>
 			<p>{t('Onze producten komen in hersluitbare glazen flessen van 500ml en bevatten een alcoholpercentage van 17%.')}</p>
 			<p>{t('yesyesyes tien windjes in een fles')}</p>
+                
+            <MoederdagSpecial/>
 
 			<ProductKaart
 				leftImage={'Images/Rabarber.png'}
