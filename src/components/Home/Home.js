@@ -125,6 +125,15 @@ const Home = ({ t }) => {
 					email={'info@firmagos.be'}
 					website={'www.drankenhandelgos.be'}
 				/>
+                
+                <SellerCard
+					title={'Spar Glabbeek'}
+					image={'Images/spar.jpeg'}
+					address={'Grotestraat 15, 3380 Glabbeek'}
+					addresslink={'https://goo.gl/maps/UemDFEpScei44gBp7'}
+					phone={'016/77.79.91'}
+					website={'https://www.mijnspar.be/spar-glabbeek'}
+				/>
 
 
 
