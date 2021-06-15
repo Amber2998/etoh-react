@@ -10,8 +10,6 @@ const Products = ({t}) => {
 			<h1>{t('Ontdek hier onze producten')}</h1>
 			<p>{t('Onze producten komen in hersluitbare glazen flessen van 500ml en bevatten een alcoholpercentage van 17%.')}</p>
 			<p>{t('yesyesyes tien windjes in een fles')}</p>
-                
-            <MoederdagSpecial/>
 
 			<ProductKaart
 				leftImage={'Images/Rabarber.png'}
@@ -56,11 +54,13 @@ const Products = ({t}) => {
 				rightImage={'Images/Foto9.jpg'}
 				prijs={t('Prijs') + `: € 16,95`}
 			/>
+            
+            <MoederdagSpecial/>
 
 			<BoxKaart
 				leftImage={'Images/tastebox.jpeg'}
 				title={t('Taste Box')}
-				text={t('Met deze box, kan je heerlijke cocktails maken met onze dranken. Deze box bevat:')}
+				text={t('Met deze box, kan je alvast onze drank eens proeven. Deze box bevat:')}
 				listItems={[
 					'1 x ' + t('Fles (500ml) naar keuze'),
 					'2 x ' + t('Tonic')+ ' (250ml)',

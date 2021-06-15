@@ -116,19 +116,9 @@ class OrderForm extends React.Component {
 							   append={(field, formik) => this.countPrice(field, formik, 16.95)}
 						/>
 
-						<Field name={'tasteBoxCounter'} type={'number'} min={0}
-							   label={t('Taste Box - € 24,95')}
-							   component={ControlledInput}
-							   disabled={this.state.submitted}
-							   prepend={t('Aantal')}
-							   onChange={this.updateValue}
-							   value={this.getFieldValue}
-							   append={(field, formik) => this.countPrice(field, formik, 24.95)}
-						/>
-						<label className={'text-muted'}>{t('Vergeet niet om bij opmerkingen aan te geven welke smaak u verkiest, keuze uit: Lady Barbara, Madam Cherry, Duchess Fran, Miss Ginger')}</label>
                                                          
-                        	<Alert variant={'warning'}>
-							<Alert.Heading style={{fontSize:'1em'}}>{t('Cadeautip voor vaderdag!')}</Alert.Heading>
+                        	<Alert variant={''}>
+							<Alert.Heading style={{fontSize:'1em'}}>{t('Cadeautip!')}</Alert.Heading>
 
 								<hr style={{margin: '0.5em 0'}}/>
 							<Field name={'moederdagBoxCounter'} type={'number'} min={0}
@@ -141,6 +131,22 @@ class OrderForm extends React.Component {
 								   append={(field, formik) => this.countPrice(field, formik, 49.95)}
 							/>
 						</Alert>
+
+                        <Alert variant={''}>
+							<Alert.Heading style={{fontSize:'1em'}}>{t('')}</Alert.Heading>
+								<hr style={{margin: '0.5em 0'}}/>
+	<Field name={'tasteBoxCounter'} type={'number'} min={0}
+							   label={t('Taste Box - € 24,95')}
+							   component={ControlledInput}
+							   disabled={this.state.submitted}
+							   prepend={t('Aantal')}
+							   onChange={this.updateValue}
+							   value={this.getFieldValue}
+							   append={(field, formik) => this.countPrice(field, formik, 24.95)}
+						/>
+
+						<label className={'text-muted'}>{t('Vergeet niet om bij opmerkingen aan te geven welke smaak u verkiest, keuze uit: Lady Barbara, Madam Cherry, Duchess Fran, Miss Ginger')}</label>
+                         </Alert>
 
 
 						{/* TODO: textArea */}

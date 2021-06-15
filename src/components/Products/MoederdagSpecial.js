@@ -7,8 +7,8 @@ export class MoederdagSpecial extends React.Component {
 
 	render () {
 		let {t} = this.props;
-		return <Alert variant={'danger'} >
-			<Alert.Heading>{t('Vaderdagtip!')}</Alert.Heading>
+		return <Alert variant={''} >
+			<Alert.Heading>{t('Cadeautip!')}</Alert.Heading>
 			<hr/>
 			<BoxKaart
 				leftImage={'Images/vaderdagteaser.jpeg'}
