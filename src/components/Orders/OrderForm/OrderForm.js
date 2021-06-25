@@ -97,7 +97,7 @@ class OrderForm extends React.Component {
 						/>
 
 						<Field name={'duchessFranCounter'} type={'number'} min={0}
-							   label={t('Duchess Fran 500ml (17%) - € 16,95/stuk')}
+							   label={t('Duchess Fran 500ml (17%) - € 16,95/stuk - SOLD OUT')}
 							   component={ControlledInput}
 							   disabled={this.state.submitted}
 							   prepend={t('Aantal')}
